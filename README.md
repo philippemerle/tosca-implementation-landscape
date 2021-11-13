@@ -10,7 +10,7 @@ Open the [TOSCA Implementation Landscape interactive version](TOSCA-Implementati
 
 ## Applied Methodology
 
-![A journey with TOSCA](A journey with TOSCA.png)
+![A journey with TOSCA](A%20journey%20with%20TOSCA.png)
 
 ### Collecting the data set
 
