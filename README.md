@@ -47,8 +47,6 @@ The next step was to select a set of criteria to characterize each TOSCA impleme
   * **![GitHub](icons/GitHub.png)**: This link points to the GitHub repository hosting the open source code for the TOSCA implementation.
   * **![SaaS](icons/SaaS.png)**: This link points to the address where the Software-as-Service is deployed.
 
-I hope this small set of criteria could help you to select the TOSCA implementations that match your business and technical requirements. Don't hesitate to propose other new helpful criteria.
-
 All these TOSCA implementations are part of a global TOSCA ecosystem. To understand this ecosystem, this is important to capture the relationships between these TOSCA implementations. Following lists five  types of pertinent relationships (represented by tagged arrows in the big picture):
 * **`<<contributes>>`**: An EU funded project contributed to the development of a TOSCA software tool.
 * **`<<hosts>>`**: An open source community (or EU project) hosts a TOSCA implementation.
@@ -56,7 +54,7 @@ All these TOSCA implementations are part of a global TOSCA ecosystem. To underst
 * **`<<plugins>>`**: A source implementation is a plugin of another target implementation.
 * **`<<same ecosystem>>`**: Two independent TOSCA implementations are developed jointly.
 
-TBC
+I hope this small classification, sets of both criteria and relationships could help you to select the TOSCA implementations that match both your business and technical requirements. Don't hesitate to propose/ask for other new helpful category/criteria/relationship.
  
 ### Generating the visual diagrams
 
