@@ -4,7 +4,7 @@ The **TOSCA Implementation Landscape** is a visual representation of the list of
 
 ## TOSCA Implementation Landscape
 
-The **TOSCA Implementation Landscape** is depicted in the following big picture:
+The **TOSCA Implementation Landscape** is depicted in the following big picture (click on it to enlarge it):
 
 ![TOSCA Implementation Landscape](https://raw.githubusercontent.com/philippemerle/tosca-implementation-landscape/main/TOSCA-Implementation-Landscape.png)
 
@@ -20,9 +20,9 @@ I started from the list of [Known TOSCA Implementations](https://github.com/oasi
 
 In order to structure the TOSCA landscape, I gradually built a classification containing the following six categories:
 1. **EU Funded Projects**: This groups European Union funded projects which have contributed to some TOSCA software tools. Examplary projects are **CELAR**, **Indigo**, **RADON**, **SeaClouds**, and **SODALITE**. I discovered the missing **DICE** later during the study.   
-2. **TOSCA Modeling Tools**: This groups all TOSCA implementations providing a graphical interface (GUI) to design both TOSCA topology templates and types. Examplary implementations are **Alien4Cloud**, **Cloud Topology Designer**, **DICER**, **Eclipse Winery**, and **EnterpriseWeb**. I discovered the missing **DICE** and **RADON IDE** later during the study.
+2. **TOSCA Modeling Tools**: This groups all TOSCA implementations providing a graphical interface (GUI) to design both TOSCA topology templates and types. Examplary implementations are **Alien4Cloud**, **Cloud Topology Designer**, **DICER**, **Eclipse Winery**, and **EnterpriseWeb**. I discovered the missing **c-Eclipse** and **RADON IDE** later during the study.
 3. **TOSCA Marketplaces**: This groups TOSCA specific places where CSARs can be imported, stored, and then proposed to TOSCA end-users. I discovered this category during the study and found only one market place currently, i.e., **xOpera Template Library**. No doubt, other marketplaces could emerge in the future.
-4. **TOSCA Orchestrators**: As the category name clearly indicates, this groups all TOSCA orchestrators which automate the deployment of TOSCA topology templates.  This category contains a lot of the entries of the initial list, and there are so many examplary orchestrators that I prefer to name none. But you should find your favorite orchestrator, shouldn't you?
+4. **TOSCA Orchestrators**: As the category name clearly indicates, this groups all TOSCA orchestrators which automate the deployment of TOSCA topology templates on target environments.  This category contains a lot of the entries of the initial list, and there are so many examplary orchestrators that I prefer to name none. But you should find your favorite orchestrator, shouldn't you?
 5. **TOSCA Developer Tools**: This groups all other software to help the job of TOSCA developers, i.e. TOSCA parsers and TOSCA processors which are independent of any TOSCA orchestrator or modeling tool. Examplary tools are the well-known OpenStack **tosca-parser** and my amazing [**TOSCA toolbox**](https://github.com/Orange-OpenSource/Cloudnet-TOSCA-toolbox) (I am not really objective on the latter:wink:).
 6. **Open Source Communities**: This groups large open source projects which host (or should host) TOSCA software tools and orchestrators. The examplary community is **OpenStack**.
 
@@ -30,10 +30,10 @@ TOSCA users should be mainly interested by the **TOSCA Modeling Tools**, **TOSCA
 
 ![A journey with TOSCA](A%20journey%20with%20TOSCA.png)
 
-The next step was to select a set of criteria to characterize each TOSCA implementation. This set must be smallest to simplify the reading of this study but enough large to provide pertinent information to TOSCA users (you). The currently selected six criteria are the following:
+The next step was to select a set of criteria to characterize each TOSCA implementation. This set should be smallest to ease the reading of this study but enough large to provide pertinent information to TOSCA users (you). The currently selected six criteria are the following:
 * **Activity**: This is the level of activities of a TOSCA implementation.  The two only levels are:
   * **Active**: By default, all TOSCA implementations are tagged as active and are represented by green maps. 
-  * **Inactive**: An implementation is tagged as inactive and are represented by a red map if it was retired, completed, or had no commits since several years. **CELAR**, **DICE** and **SeaClouds** EU projects are completed since several years ago. **AriaTosca** orchestrator was retired on 2018. There are no commits on **c-Eclipse** and **DICER** since 2015 and 2018 respectively.
+  * **Inactive**: An implementation is tagged as inactive and is represented by a red map if it was retired, completed, or had no commits since several years. **CELAR**, **DICE** and **SeaClouds** EU projects are completed since several years ago. **AriaTosca** orchestrator was retired on 2018. There are no commits on **c-Eclipse** and **DICER** since 2015 and 2018, respectively.
 * **TOSCA**: These are the TOSCA profile(s), i.e., `tosca_definitions_version` keyname, supported by the TOSCA implementation. For some implementations, this information was not found, so it is unknown. This is the case for **c-Eclipse**, **Cisco NSO**, **CPLANE.ai**, **EntrepriseWeb**, and **Itential** products. Some products added their proprietary profiles such as **Alien4Cloud** and **Unfurl**. Let's note that **Cloudify** only supports its own profiles.
 * **Target**: This is the target environment(s) where deployments can be done with the TOSCA implementation.
 * **Usage**: This determinates how the end-user interacts with the TOSCA implementation, via a
@@ -50,11 +50,11 @@ The next step was to select a set of criteria to characterize each TOSCA impleme
 
 TBC
 
-Five categories of relationships between TOSCA implementations represented by arrows tagged with:
+Four categories of relationships between TOSCA implementations represented by arrows tagged with:
 * **`<<contributes>>`**: An EU funded project contributes to a TOSCA software tool.
-* **`<<uses>>`**: A source entry uses another target entry.
+* **`<<uses>>`**: A source implementation uses another target implementation.
 * **`<<plugins>>`**: A source implementation is a plugin of another target implementation.
-* **`<<hosts>>`**: An open source community hosts a TOSCA implementation.
+* **`<<hosts>>`**: An open source community (or EU project) hosts a TOSCA implementation.
 
 TBC
  
@@ -73,4 +73,4 @@ Let's note that following required software need to be pre-installed:
 
 ## Contributions
 
-Any contribution (e.g., adding a new TOSCA implementation, correcting any misinformation or adding new criteria) is welcome. Please, [create a new issue](https://github.com/philippemerle/tosca-implementation-landscape/issues/new) or pull request.
+Any contribution such as adding a new TOSCA implementation, correcting any misinformation or adding new criteria is welcome. Please [create a new issue](https://github.com/philippemerle/tosca-implementation-landscape/issues/new) or pull request.
