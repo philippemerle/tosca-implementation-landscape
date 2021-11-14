@@ -273,7 +273,7 @@ $Category("TOSCA Orchestrators", orchestrators)
     TOSCA => 1.3
     Target => Any cloud
     Usage => SaaS
-    Nature => XLAB property 
+    Nature => XLAB property
     Links => [[https://saas-xopera.xlab.si <img:icons/SaaS.png{scale=0.5}>]]
   }
 
@@ -350,8 +350,8 @@ $Category("TOSCA Developer Tools", developer_tools)
   }
 }
 
-radon *.. radon_ide : <<contributes>> 
-radon *.. opentosca : <<contributes>> 
+radon *.. radon_ide : <<contributes>>
+radon *.. opentosca : <<contributes>>
 celar *.. c_eclipse : <<contributes>>
 dice *.. dicer : <<contributes>>
 indigo_datacloud *-- indigo_paas_orchestrator : <<hosts>>
@@ -361,7 +361,7 @@ openstack *-up- openstack_tacker : <<hosts>>
 openstack *-up- openstack_heat_translator : <<hosts>>
 sodalite ..> xopera_opera : <<uses>>
 
-dicer ..> cloudify : <<uses>> 
+dicer ..> cloudify : <<uses>>
 seaclouds ..> alien4cloud : <<uses>>
 alien4cloud ..> yorc : <<uses>>
 alien4cloud ..> cloudify : <<uses>>
@@ -376,12 +376,12 @@ torch ..> openstack_tosca_parser : <<uses>>
 xopera_saas ..> xopera_opera : <<uses>>
 orange_tosca_toolbox .up.> cloudnet_tosca_toolbox : <<uses>>
 openstack_heat_translator .up.> openstack_tosca_parser : <<uses>>
-cloudify <.. mso4sc_hpc : <<plugin>> 
+cloudify <.. mso4sc_hpc : <<plugin>>
 
 winery .. opentosca : <<same ecosystem>>
 
-cloudnet_tosca_toolbox ..up..> xopera_opera : <<applied to all examples>>
-cloudnet_tosca_toolbox ..up..> torch : <<applied to all examples>>
+'cloudnet_tosca_toolbox ..up..> xopera_opera : <<applied to all examples>>
+'cloudnet_tosca_toolbox ..up..> torch : <<applied to all examples>>
 'TODO
 'cloudnet_tosca_toolbox ..up..> turandot : <<applied to examples>>
 'cloudnet_tosca_toolbox ..up..> tosker : <<applied to examples>>
