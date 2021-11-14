@@ -35,7 +35,7 @@ The next step was to select a set of criteria to characterize each TOSCA impleme
   * **Active**: By default, all TOSCA implementations are tagged as active and are represented by green maps. 
   * **Inactive**: An implementation is tagged as inactive and is represented by a red map if it was retired, completed, or had no commits since several years. **CELAR**, **DICE** and **SeaClouds** EU projects are completed since several years ago. **AriaTosca** orchestrator was retired on 2018. There are no commits on **c-Eclipse** and **DICER** since 2015 and 2018, respectively.
 * **TOSCA**: These are the TOSCA profile(s), i.e., `tosca_definitions_version` keyname, supported by the TOSCA implementation. For some implementations, this information was not found, so it is unknown. This is the case for **c-Eclipse**, **Cisco NSO**, **CPLANE.ai**, **EntrepriseWeb**, and **Itential** products. Some products added their proprietary profiles such as **Alien4Cloud** and **Unfurl**. Let's note that **Cloudify** only supports its own profiles.
-* **Target**: This is the target environment(s) where deployments can be done with the TOSCA implementation.
+* **Target**: This is the target environment(s) where deployments can be done with the TOSCA implementation. A TOSCA orchestrator could potentially target any cloud such as **Cloudify**, **OpenTOSCA**, **Opera**, **Ubicity Orchestrator** and **Yorc**. Some TOSCA orchestrator targets a specific runtime environment: **Tacker** targets OpenStack only, **Turandot** targets Kubernetes only and **TosKer** targets Docker only.
 * **Usage**: This determinates how the end-user interacts with the TOSCA implementation, via a
   * **CLI**: Command-Line Interface (CLI).
   * **Webapp**: A web application deployed on the end-user environment.
@@ -48,11 +48,11 @@ The next step was to select a set of criteria to characterize each TOSCA impleme
   * **![SaaS](icons/SaaS.png)**: This link points to the address where the Software-as-Service is deployed.
 
 All these TOSCA implementations are part of a global TOSCA ecosystem. To understand this ecosystem, this is important to capture the relationships between these TOSCA implementations. Following lists five  types of pertinent relationships (represented by tagged arrows in the big picture):
-* **`<<contributes>>`**: An EU funded project contributed to the development of a TOSCA software tool.
-* **`<<hosts>>`**: An open source community (or EU project) hosts a TOSCA implementation.
-* **`<<uses>>`**: A source implementation uses another target implementation.
-* **`<<plugins>>`**: A source implementation is a plugin of another target implementation.
-* **`<<same ecosystem>>`**: Two independent TOSCA implementations are developed jointly.
+* **`<<contributes>>`**: An EU funded project contributed to the development of a TOSCA software tool. For instance, **RADON** EU project contributed to **OpenTOSCA** orchestrator.
+* **`<<hosts>>`**: An open source community (or EU project) hosts a TOSCA implementation. For instance, **OpenStack** hosts **tosca-parser**, **Heat-Translator** and **Tacker** open source projects.
+* **`<<uses>>`**: A source implementation uses another target implementation. For instance, **Alien4Cloud** modeling tool uses both **Cloudify** and **Yorc** as TOSCA orchestrators.
+* **`<<plugins>>`**: A source implementation is a plugin of another target implementation. For instance, **MSO4SC HPC** is a plugin for **Cloudify** orchestrator.
+* **`<<same ecosystem>>`**: Two independent TOSCA implementations are developed jointly. For instance, both **Eclipse Winery** and **OpenTOSCA** are developed by the same academia research group.
 
 I hope this small classification, sets of both criteria and relationships could help you to select the TOSCA implementations that match both your business and technical requirements. Don't hesitate to propose/ask for other new helpful category/criteria/relationship.
  
