@@ -350,10 +350,10 @@ $Category("TOSCA Developer Tools", developer_tools)
   }
 }
 
-radon *.. radon_ide : <<contributes>>
-radon *.. opentosca : <<contributes>>
-celar *.. c_eclipse : <<contributes>>
-dice *.. dicer : <<contributes>>
+radon o-- radon_ide : <<contributes>>
+radon o-- opentosca : <<contributes>>
+celar o-- c_eclipse : <<contributes>>
+dice o-- dicer : <<contributes>>
 indigo_datacloud *-- indigo_paas_orchestrator : <<hosts>>
 onap *-up- jtosca_parser : <<hosts>>
 openstack *-up- openstack_tosca_parser : <<hosts>>
