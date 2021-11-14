@@ -28,7 +28,7 @@ In order to structure the TOSCA landscape, I gradually built a classification co
 
 TOSCA users should be mainly interested by the **TOSCA Modeling Tools**, **TOSCA Marketplaces**, **TOSCA Orchestrators**, and **TOSCA Developer Tools**. Following figure is depicted how these pieces of software interact:
 
-![A journey with TOSCA](https://raw.githubusercontent.com/philippemerle/tosca-implementation-landscape/main/TOSCA-Implementation-Landscape/A%20journey%20with%20TOSCA.png)
+![A journey with TOSCA](A%20journey%20with%20TOSCA.png)
 
 The next step was to select a set of criteria to characterize each TOSCA implementation. This set must be smallest to simplify the reading of this study but enough large to provide pertinent information to TOSCA users (you). The currently selected six criteria are the following:
 * **Activity**: This is the level of activities of a TOSCA implementation.  The two only levels are:
