@@ -23,7 +23,7 @@ In order to structure the TOSCA landscape, I gradually built a classification co
 2. **TOSCA Modeling Tools**: This groups all TOSCA implementations providing a graphical interface (GUI) to design both TOSCA topology templates and types. Examplary implementations are **Alien4Cloud**, **Cloud Topology Designer**, **DICER**, **Eclipse Winery**, and **EnterpriseWeb**. I discovered the missing **c-Eclipse** and **RADON IDE** later during the study.
 3. **TOSCA Marketplaces**: This groups TOSCA specific places where CSARs can be imported, stored, and then proposed to TOSCA end-users. I discovered this category during the study and found only one market place currently, i.e., **xOpera Template Library**. No doubt, other marketplaces could emerge in the future.
 4. **TOSCA Orchestrators**: As the category name clearly indicates, this groups all TOSCA orchestrators which automate the deployment of TOSCA topology templates on target environments.  This category contains a lot of the entries of the initial list, and there are so many examplary orchestrators that I prefer to name none. But you should find your favorite orchestrator, shouldn't you?
-5. **TOSCA Developer Tools**: This groups all other software to help the job of TOSCA developers, i.e. TOSCA parsers and TOSCA processors which are independent of any TOSCA orchestrator or modeling tool. Examplary tools are the well-known OpenStack **tosca-parser** and my amazing [**TOSCA toolbox**](https://github.com/Orange-OpenSource/Cloudnet-TOSCA-toolbox) (I am not really objective on the latter:wink:).
+5. **TOSCA Developer Tools**: This groups all other pieces of software to help the job of TOSCA developers, i.e. TOSCA parsers and TOSCA processors which are independent of any TOSCA orchestrator or modeling tool. Examplary developer tools are the well-known OpenStack **tosca-parser** and my amazing [**TOSCA toolbox**](https://github.com/Orange-OpenSource/Cloudnet-TOSCA-toolbox) (I am not really objective on the latter:wink:).
 6. **Open Source Communities**: This groups large open source projects which host (or should host) TOSCA software tools and orchestrators. The examplary community is **OpenStack**.
 
 TOSCA users should be mainly interested by the **TOSCA Modeling Tools**, **TOSCA Marketplaces**, **TOSCA Orchestrators**, and **TOSCA Developer Tools**. Following figure is depicted how these pieces of software interact:
@@ -47,14 +47,14 @@ The next step was to select a set of criteria to characterize each TOSCA impleme
   * **![GitHub](icons/GitHub.png)**: This link points to the GitHub repository hosting the open source code for the TOSCA implementation.
   * **![SaaS](icons/SaaS.png)**: This link points to the address where the Software-as-Service is deployed.
 
+I hope this small set of criteria could help you to select the TOSCA implementations that match your business and technical requirements. Don't hesitate to propose other new helpful criteria.
 
-TBC
-
-Four categories of relationships between TOSCA implementations represented by arrows tagged with:
-* **`<<contributes>>`**: An EU funded project contributes to a TOSCA software tool.
+All these TOSCA implementations are part of a global TOSCA ecosystem. To understand this ecosystem, this is important to capture the relationships between these TOSCA implementations. Following lists five  types of pertinent relationships (represented by tagged arrows in the big picture):
+* **`<<contributes>>`**: An EU funded project contributed to the development of a TOSCA software tool.
+* **`<<hosts>>`**: An open source community (or EU project) hosts a TOSCA implementation.
 * **`<<uses>>`**: A source implementation uses another target implementation.
 * **`<<plugins>>`**: A source implementation is a plugin of another target implementation.
-* **`<<hosts>>`**: An open source community (or EU project) hosts a TOSCA implementation.
+* **`<<same ecosystem>>`**: Two independent TOSCA implementations are developed jointly.
 
 TBC
  
