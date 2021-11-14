@@ -51,11 +51,11 @@ The next step was to select a set of criteria to characterize each TOSCA impleme
 TBC
 
 Five categories of relationships between TOSCA implementations represented by arrows tagged with:
-* **<<contributes>>**: An EU funded project contributes to a TOSCA software tools.
-* **<<uses>>**: A source entry uses another target entry.
-* **<<plugins>>**: A source implementation is a plugin of another target implementation.
-* **<<hosts>>**: An open source community hosts a TOSCA implementation.
-* **<<applied to all examples>>**: Cloudnet TOSCA toolbox was applied to all examples provided by a target TOSCA implementation.
+* **`<<contributes>>`**: An EU funded project contributes to a TOSCA software tool.
+* **`<<uses>>`**: A source entry uses another target entry.
+* **`<<plugins>>`**: A source implementation is a plugin of another target implementation.
+* **`<<hosts>>`**: An open source community hosts a TOSCA implementation.
+* **`<<applied to all examples>>`**: Cloudnet TOSCA toolbox was applied to all examples provided by a target TOSCA implementation.
 
 TBC
  
