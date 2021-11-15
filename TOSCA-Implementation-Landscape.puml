@@ -1,75 +1,41 @@
 @startuml
-
 Title **TOSCA Implementation Landscape**
-
-!$ACTIVE = "#PaleGreen"
-!$INACTIVE = "#DarkRed"
-
-!function $Category($label,$id)
-!return "package " + '"' + "**" + $label + "**" + '"' + " as " + $id
-!endfunction
-
-!function $Project($label,$id,$status)
-!return "map " + '"' + "**" + $label + "**" + '"' + " as " + $id + " " + $status
-!endfunction
-
-!function $Implementation($label,$id,$status)
-!return "map " + '"' + "**" + $label + "**" + '"' + " as " + $id + " " + $status
-!endfunction
-
-$Category("EU Funded Projects", eu_funded_projects)
-{
-  $Project("CELAR", celar, $INACTIVE) {
+package "**EU Funded Projects**" as EU_Funded_Projects {
+  map "**CELAR**" as CELAR #DarkRed {
     Links => [[https://github.com/CELAR <img:icons/GitHub.png{scale=0.5}>]]
   }
-
-  $Project("DICE", dice, $INACTIVE) {
+  map "**DICE**" as DICE #DarkRed {
     Links => [[https://github.com/dice-project <img:icons/GitHub.png{scale=0.5}>]]
   }
-
-  $Project("INDIGO - DataCloud", indigo_datacloud, $ACTIVE) {
+  map "**INDIGO - DataCloud**" as INDIGO___DataCloud #PaleGreen {
     Links => [[https://www.indigo-datacloud.eu <img:icons/Website.png{scale=0.5}>]] [[https://github.com/indigo-dc <img:icons/GitHub.png{scale=0.5}>]]
   }
-
-  $Project("SeaClouds", seaclouds, $INACTIVE) {
+  map "**SeaClouds**" as SeaClouds #DarkRed {
     Links => [[http://www.seaclouds-project.eu <img:icons/Website.png{scale=0.5}>]] [[https://github.com/SeaCloudsEU <img:icons/GitHub.png{scale=0.5}>]]
-'    TOSCA => 1.0
-'    Usage => ???
-'    Nature => Open source
-'    Language => Java
   }
-
-  $Project("Radon", radon, $ACTIVE) {
+  map "**Radon**" as Radon #PaleGreen {
     Links => [[https://radon-h2020.eu <img:icons/Website.png{scale=0.5}>]] [[https://github.com/radon-h2020 <img:icons/GitHub.png{scale=0.5}>]]
   }
-
-  $Project("Sodalite", sodalite, $ACTIVE) {
+  map "**Sodalite**" as Sodalite #PaleGreen {
     Links => [[https://www.sodalite.eu <img:icons/Website.png{scale=0.5}>]] [[https://github.com/SODALITE-EU <img:icons/GitHub.png{scale=0.5}>]]
   }
 }
-
-$Category("Open Source Communities", open_source_projects)
-{
-  $Project("OpenStack", openstack, $ACTIVE) {
+package "**Open Source Communities**" as Open_Source_Communities {
+  map "**OpenStack**" as OpenStack #PaleGreen {
     Links => [[https://www.openstack.org <img:icons/Website.png{scale=0.5}>]] [[https://github.com/openstack <img:icons/GitHub.png{scale=0.5}>]]
   }
-
-  $Project("ONAP", onap, $ACTIVE) {
+  map "**ONAP**" as ONAP #PaleGreen {
     Links => [[https://www.onap.org <img:icons/Website.png{scale=0.5}>]] [[https://github.com/onap <img:icons/GitHub.png{scale=0.5}>]]
   }
-
-  $Project("Open Baton", open_baton, $ACTIVE) {
+  map "**Open Baton**" as Open_Baton #PaleGreen {
     Links => [[https://openbaton.github.io <img:icons/Website.png{scale=0.5}>]] [[https://github.com/openbaton <img:icons/GitHub.png{scale=0.5}>]]
   }
-
-  $Project("OPNFV", opnfv, $ACTIVE) {
+  map "**OPNFV**" as OPNFV #PaleGreen {
     Links => [[https://www.opnfv.org <img:icons/Website.png{scale=0.5}>]]
   }
 }
-
-$Category("TOSCA Modeling Tools", modeling_tools)
-{
-  $Implementation("Alien4Cloud", alien4cloud, $ACTIVE) {
+package "**TOSCA Modeling Tools**" as TOSCA_Modeling_Tools {
+  map "**Alien4Cloud**" as Alien4Cloud #PaleGreen {
     TOSCA => 1.0 + alien_dsl
     Target => Any cloud
     Usage => Webapp
@@ -77,48 +43,41 @@ $Category("TOSCA Modeling Tools", modeling_tools)
     Language => Java
     Links => [[http://alien4cloud.github.io <img:icons/Website.png{scale=0.5}>]] [[https://github.com/alien4cloud <img:icons/GitHub.png{scale=0.5}>]]
   }
-
-  $Implementation("Cloud Topology Designer", cloud_topology_designer, $ACTIVE) {
+  map "**Cloud Topology Designer**" as Cloud_Topology_Designer #PaleGreen {
     TOSCA => 1.0 + alien_dsl
     Target => Open Telekom Cloud
     Usage => SaaS
     Nature => Commercial product
-'  (T-Systems)
     Links => [[https://designer.otc-service.com <img:icons/SaaS.png{scale=0.5}>]]
   }
-
-  $Implementation("c-Eclipse", c_eclipse, $INACTIVE) {
+  map "**c-Eclipse**" as c_Eclipse #DarkRed {
     TOSCA => Unknown
     Usage => <img:icons/Eclipse.png{scale=0.5}>
     Nature => Open source
     Language => Java
     Links => [[https://github.com/CELAR/c-Eclipse <img:icons/GitHub.png{scale=0.5}>]]
   }
-
-  $Implementation("DICER", dicer, $INACTIVE) {
+  map "**DICER**" as DICER #DarkRed {
     TOSCA => cloudify_dsl_1_x\nwhere x in [1, 2, 3]
     Usage => <img:icons/Eclipse.png{scale=0.5}>
     Nature => Open source
     Language => Java
     Links => [[https://github.com/dice-project/DICER <img:icons/GitHub.png{scale=0.5}>]]
   }
-
-  $Implementation("Eclipse Winery", winery, $ACTIVE) {
-    TOSCA => XML/1.3
+  map "**Eclipse Winery**" as Eclipse_Winery #PaleGreen {
+    TOSCA => XML + 1.3
     Usage => Webapp + <img:icons/Eclipse.png{scale=0.5}>
     Nature => Open source
     Language => Java
     Links => [[https://projects.eclipse.org/projects/soa.winery <img:icons/Website.png{scale=0.5}>]]
   }
-
-  $Implementation("EnterpriseWeb", enterprise_web, $ACTIVE) {
+  map "**EnterpriseWeb**" as EnterpriseWeb #PaleGreen {
     TOSCA => Unknown
-    Usage => Webapp or SaaS
+    Usage => Unknown
     Nature => Commercial product
     Links => [[https://enterpriseweb.com <img:icons/Website.png{scale=0.5}>]]
   }
-
-  $Implementation("RADON IDE", radon_ide, $ACTIVE) {
+  map "**RADON IDE**" as RADON_IDE #PaleGreen {
     TOSCA => 1.3
     Usage => Webapp
     Nature => Open source
@@ -126,52 +85,44 @@ $Category("TOSCA Modeling Tools", modeling_tools)
     Links => [[https://github.com/radon-h2020/radon-ide <img:icons/GitHub.png{scale=0.5}>]]
   }
 }
-
-$Category("TOSCA Marketplace", marketplace)
-{
-  $Implementation("xOpera Template Library", xopera_template_library, $ACTIVE) {
+package "**TOSCA Marketplaces**" as TOSCA_Marketplaces {
+  map "**xOpera Template Library**" as xOpera_Template_Library #PaleGreen {
     TOSCA => Any
     Usage => SaaS
     Nature => XLAB property
     Links => [[https://template-library-xopera.xlab.si <img:icons/SaaS.png{scale=0.5}>]]
   }
 }
-
-$Category("TOSCA Orchestrators", orchestrators)
-{
-  $Implementation("Cisco NSO", cisco_nso, $ACTIVE) {
+package "**TOSCA Orchestrators**" as TOSCA_Orchestrators {
+  map "**Cisco NSO**" as Cisco_NSO #PaleGreen {
     TOSCA => Unknown
     Target => Unknown
     Usage => Unknown
     Nature => Commercial product
     Links => [[https://www.cisco.com/c/en/us/products/cloud-systems-management/network-services-orchestrator/index.html <img:icons/Website.png{scale=0.5}>]]
   }
-
-  $Implementation("CPLANE.ai", cplane_ai, $ACTIVE) {
+  map "**CPLANE.ai**" as CPLANE_ai #PaleGreen {
     TOSCA => Unknown
     Target => Unknown
     Usage => Unknown
     Nature => Commercial product
     Links => [[https://cplaneai.com <img:icons/Website.png{scale=0.5}>]]
   }
-
-  $Implementation("Itential", itential, $ACTIVE) {
+  map "**Itential**" as Itential #PaleGreen {
     TOSCA => Unknown
-    Target => Everything
+    Target => Unknown
     Usage => Unknown
     Nature => Commercial product
     Links => [[https://www.itential.com/products/automation-platform <img:icons/Website.png{scale=0.5}>]]
   }
-
-  $Implementation("Ubicity Orchestrator", ubicity_orchestrator, $ACTIVE) {
+  map "**Ubicity Orchestrator**" as Ubicity_Orchestrator #PaleGreen {
     TOSCA => 1.3 + 2.0
     Target => Any cloud
     Usage => CLI
     Nature => Commercial product
     Links => [[https://ubicity.com/products.html <img:icons/Website.png{scale=0.5}>]]
   }
-
-  $Implementation("Yorc", yorc, $ACTIVE) {
+  map "**Yorc**" as Yorc #PaleGreen {
     TOSCA => 1.2
     Target => Any cloud
     Usage => CLI
@@ -179,8 +130,7 @@ $Category("TOSCA Orchestrators", orchestrators)
     Language => Go
     Links => [[https://ystia.github.io <img:icons/Website.png{scale=0.5}>]] [[https://github.com/ystia/yorc <img:icons/GitHub.png{scale=0.5}>]]
   }
-
-  $Implementation("Cloudify", cloudify, $ACTIVE) {
+  map "**Cloudify**" as Cloudify #PaleGreen {
     TOSCA => Cloudify DSL\nTOSCA-inspired dialect
     Target => Any cloud
     Usage => CLI
@@ -188,16 +138,14 @@ $Category("TOSCA Orchestrators", orchestrators)
     Language => Python
     Links => [[https://cloudify.co <img:icons/Website.png{scale=0.5}>]] [[https://github.com/cloudify-cosmo <img:icons/GitHub.png{scale=0.5}>]]
   }
-
-  $Implementation("MSO4SC HPC", mso4sc_hpc, $ACTIVE) {
+  map "**MSO4SC HPC**" as MSO4SC_HPC #PaleGreen {
     TOSCA => Cloudify DSL
     Usage => Plugin
     Nature => Open source
     Language => Python
     Links => [[https://github.com/MSO4SC/cloudify-hpc-plugin <img:icons/GitHub.png{scale=0.5}>]]
-    }
-
-  $Implementation("AriaTosca", ariatosca, $INACTIVE) {
+  }
+  map "**AriaTosca**" as AriaTosca #DarkRed {
     TOSCA => 1.0
     Target => Any cloud
     Usage => CLI
@@ -205,8 +153,7 @@ $Category("TOSCA Orchestrators", orchestrators)
     Language => Python
     Links => [[http://incubator.apache.org/projects/ariatosca.html <img:icons/Website.png{scale=0.5}>]] [[https://github.com/apache/incubator-ariatosca <img:icons/GitHub.png{scale=0.5}>]]
   }
-
-  $Implementation("INDIGO PaaS Orchestrator", indigo_paas_orchestrator, $ACTIVE) {
+  map "**INDIGO PaaS Orchestrator**" as INDIGO_PaaS_Orchestrator #PaleGreen {
     TOSCA => 1.0 + NFV 1.0
     Target => Any cloud
     Usage => Webapp
@@ -214,8 +161,7 @@ $Category("TOSCA Orchestrators", orchestrators)
     Language => Java
     Links => [[https://github.com/indigo-dc/orchestrator <img:icons/GitHub.png{scale=0.5}>]]
   }
-
-  $Implementation("TORCH", torch, $ACTIVE) {
+  map "**TORCH**" as TORCH #PaleGreen {
     TOSCA => 1.0
     Target => OpenStack + Azure +\nKubernetes + Docker Swarm
     Usage => Webapp
@@ -223,8 +169,7 @@ $Category("TOSCA Orchestrators", orchestrators)
     Language => Java + JavaScript + Php + Python
     Links => [[https://github.com/unict-cclab/TORCH <img:icons/GitHub.png{scale=0.5}>]]
   }
-
-  $Implementation("Turandot", turandot, $ACTIVE) {
+  map "**Turandot**" as Turandot #PaleGreen {
     TOSCA => 1.3
     Target => Kubernetes
     Usage => CLI
@@ -232,8 +177,7 @@ $Category("TOSCA Orchestrators", orchestrators)
     Language => Go
     Links => [[https://turandot.puccini.cloud <img:icons/Website.png{scale=0.5}>]] [[https://github.com/tliron/turandot <img:icons/GitHub.png{scale=0.5}>]]
   }
-
-  $Implementation("Unfurl", unfurl, $ACTIVE) {
+  map "**Unfurl**" as Unfurl #PaleGreen {
     TOSCA => 1.3 + unfurl_1_0_0
     Target => Any cloud
     Usage => CLI
@@ -241,8 +185,7 @@ $Category("TOSCA Orchestrators", orchestrators)
     Language => Python
     Links => [[https://unfurl.run <img:icons/Website.png{scale=0.5}>]] [[https://github.com/onecommons/unfurl <img:icons/GitHub.png{scale=0.5}>]]
   }
-
-  $Implementation("OpenTOSCA", opentosca, $ACTIVE) {
+  map "**OpenTOSCA**" as OpenTOSCA #PaleGreen {
     TOSCA => 1.3
     Target => Any cloud
     Usage => Webapp
@@ -250,8 +193,7 @@ $Category("TOSCA Orchestrators", orchestrators)
     Language => Java
     Links => [[https://www.opentosca.org <img:icons/Website.png{scale=0.5}>]] [[https://github.com/OpenTOSCA <img:icons/GitHub.png{scale=0.5}>]]
   }
-
-  $Implementation("TosKer", tosker, $ACTIVE) {
+  map "**TosKer**" as TosKer #PaleGreen {
     TOSCA => 1.0
     Target => Docker
     Usage => CLI
@@ -259,8 +201,7 @@ $Category("TOSCA Orchestrators", orchestrators)
     Language => Python
     Links => [[https://github.com/di-unipi-socc/tosker <img:icons/GitHub.png{scale=0.5}>]]
   }
-
-  $Implementation("xOpera Opera", xopera_opera, $ACTIVE) {
+  map "**xOpera Opera**" as xOpera_Opera #PaleGreen {
     TOSCA => 1.3
     Target => Any cloud
     Usage => CLI
@@ -268,16 +209,14 @@ $Category("TOSCA Orchestrators", orchestrators)
     Language => Python
     Links => [[https://github.com/xlab-si/xopera-opera <img:icons/GitHub.png{scale=0.5}>]]
   }
-
-  $Implementation("xOpera SaaS", xopera_saas, $ACTIVE) {
+  map "**xOpera SaaS**" as xOpera_SaaS #PaleGreen {
     TOSCA => 1.3
     Target => Any cloud
     Usage => SaaS
     Nature => XLAB property
     Links => [[https://saas-xopera.xlab.si <img:icons/SaaS.png{scale=0.5}>]]
   }
-
-  $Implementation("Tacker", openstack_tacker, $ACTIVE) {
+  map "**Tacker**" as Tacker #PaleGreen {
     TOSCA => 1.1 + NFV 1.0
     Target => OpenStack
     Usage => CLI
@@ -286,25 +225,21 @@ $Category("TOSCA Orchestrators", orchestrators)
     Links => [[https://wiki.openstack.org/wiki/Tacker <img:icons/Website.png{scale=0.5}>]] [[https://github.com/openstack/tacker <img:icons/GitHub.png{scale=0.5}>]]
   }
 }
-
-$Category("TOSCA Developer Tools", developer_tools)
-{
-  $Implementation("TOSCA toolbox", orange_tosca_toolbox, $ACTIVE) {
-    TOSCA => 1.0 + 1.1 + 1.2 + 1.3 + 2.0
-    Usage => SaaS
-    Nature => Orange property
-    Links => [[https://toscatoolbox.orange.com <img:icons/SaaS.png{scale=0.5}>]]
-  }
-
-  $Implementation("Cloudnet TOSCA Toolbox", cloudnet_tosca_toolbox, $ACTIVE) {
+package "**TOSCA Developer Tools**" as TOSCA_Developer_Tools {
+  map "**Cloudnet TOSCA Toolbox**" as Cloudnet_TOSCA_Toolbox #PaleGreen {
     TOSCA => 1.0 + 1.1 + 1.2 + 1.3 + 2.0
     Usage => CLI
     Nature => Open source
     Language => Python
     Links => [[https://github.com/Orange-OpenSource/Cloudnet-TOSCA-toolbox <img:icons/GitHub.png{scale=0.5}>]]
   }
-
-  $Implementation("Heat-Translator", openstack_heat_translator, $ACTIVE) {
+  map "**TOSCA toolbox**" as TOSCA_toolbox #PaleGreen {
+    TOSCA => 1.0 + 1.1 + 1.2 + 1.3 + 2.0
+    Usage => SaaS
+    Nature => Orange property
+    Links => [[https://toscatoolbox.orange.com <img:icons/SaaS.png{scale=0.5}>]]
+  }
+  map "**Heat-Translator**" as Heat_Translator #PaleGreen {
     TOSCA => 1.0
     Target => OpenStack Heat
     Usage => CLI
@@ -312,8 +247,7 @@ $Category("TOSCA Developer Tools", developer_tools)
     Language => Python
     Links => [[https://wiki.openstack.org/wiki/Heat-Translator <img:icons/Website.png{scale=0.5}>]] [[https://github.com/openstack/heat-translator <img:icons/GitHub.png{scale=0.5}>]]
   }
-
-  $Implementation("TosKeriser", toskeriser, $ACTIVE) {
+  map "**TosKeriser**" as TosKeriser #PaleGreen {
     TOSCA => 1.0
     Target => Docker
     Usage => CLI
@@ -321,26 +255,22 @@ $Category("TOSCA Developer Tools", developer_tools)
     Language => Python
     Links => [[https://github.com/di-unipi-socc/TosKeriser <img:icons/GitHub.png{scale=0.5}>]]
   }
-
-  $Category("TOSCA Parsers", tosca_parsers)
-  {
-    $Implementation("Puccini", puccini, $ACTIVE) {
-      TOSCA => 1.0 + 1.1 + 1.2 + 1.3 + 2.0\n+ cloudify_dsl_1_3 + Heat
+  package "**TOSCA Parsers**" as TOSCA_Parsers {
+    map "**Puccini**" as Puccini #PaleGreen {
+      TOSCA => 1.0 + 1.1 + 1.2 + 1.3 + 2.0 +\ncloudify_dsl_1_3 + Heat
       Usage => CLI + Webapp
       Nature => Open source
       Language => Go
       Links => [[https://puccini.cloud <img:icons/Website.png{scale=0.5}>]] [[https://github.com/tliron/puccini <img:icons/GitHub.png{scale=0.5}>]]
     }
-
-    $Implementation("JTOSCA parser", jtosca_parser, $ACTIVE) {
+    map "**JTOSCA parser**" as JTOSCA_parser #PaleGreen {
       TOSCA => 1.0
       Usage => lib
       Nature => Open source
       Language => Java
       Links => [[https://github.com/onap/sdc-jtosca <img:icons/GitHub.png{scale=0.5}>]]
     }
-
-    $Implementation("tosca-parser", openstack_tosca_parser, $ACTIVE) {
+    map "**tosca-parser**" as tosca_parser #PaleGreen {
       TOSCA => 1.0 + NFV
       Usage => CLI
       Nature => Open source
@@ -349,49 +279,41 @@ $Category("TOSCA Developer Tools", developer_tools)
     }
   }
 }
-
-radon o-- radon_ide : <<contributes>>
-radon o-- opentosca : <<contributes>>
-celar o-- c_eclipse : <<contributes>>
-dice o-- dicer : <<contributes>>
-indigo_datacloud *-- indigo_paas_orchestrator : <<hosts>>
-onap *-up- jtosca_parser : <<hosts>>
-openstack *-up- openstack_tosca_parser : <<hosts>>
-openstack *-up- openstack_tacker : <<hosts>>
-openstack *-up- openstack_heat_translator : <<hosts>>
-sodalite ..> xopera_opera : <<uses>>
-
-dicer ..> cloudify : <<uses>>
-seaclouds ..> alien4cloud : <<uses>>
-alien4cloud ..> yorc : <<uses>>
-alien4cloud ..> cloudify : <<uses>>
-cloud_topology_designer ..> alien4cloud : <<uses>>
-radon_ide ..> winery : <<uses>>
-radon_ide ..> xopera_saas : <<uses>>
-radon_ide ..> xopera_template_library : <<uses>>
-turandot ..> puccini : <<uses>>
-openstack_tacker ..> openstack_tosca_parser : <<uses>>
-unfurl ..> openstack_tosca_parser : <<uses>>
-torch ..> openstack_tosca_parser : <<uses>>
-xopera_saas ..> xopera_opera : <<uses>>
-orange_tosca_toolbox .up.> cloudnet_tosca_toolbox : <<uses>>
-openstack_heat_translator .up.> openstack_tosca_parser : <<uses>>
-cloudify <.. mso4sc_hpc : <<plugin>>
-
-winery .. opentosca : <<same ecosystem>>
-
-'cloudnet_tosca_toolbox ..up..> xopera_opera : <<applied to all examples>>
-'cloudnet_tosca_toolbox ..up..> torch : <<applied to all examples>>
-'TODO
-'cloudnet_tosca_toolbox ..up..> turandot : <<applied to examples>>
-'cloudnet_tosca_toolbox ..up..> tosker : <<applied to examples>>
-'cloudnet_tosca_toolbox ..up..> yorc : <<applied to examples>>
-'cloudnet_tosca_toolbox ..up..> onap : <<applied to examples>>
-
-eu_funded_projects --[hidden]-- modeling_tools
-modeling_tools -[hidden]- marketplace
-marketplace --[hidden]-- orchestrators
-orchestrators --[hidden]-- developer_tools
-developer_tools --[hidden]-- open_source_projects
-
+CELAR o-- c_Eclipse : <<contributes>>
+DICE o-- DICER : <<contributes>>
+INDIGO___DataCloud *-up- INDIGO_PaaS_Orchestrator : <<hosts>>
+SeaClouds ..> Alien4Cloud : <<uses>>
+Radon o-- RADON_IDE : <<contributes>>
+Radon o-- OpenTOSCA : <<contributes>>
+Sodalite ..> xOpera_Opera : <<uses>>
+OpenStack *-up- tosca_parser : <<hosts>>
+OpenStack *-up- Heat_Translator : <<hosts>>
+OpenStack *-up- Tacker : <<hosts>>
+ONAP *-up- JTOSCA_parser : <<hosts>>
+Alien4Cloud ..> Yorc : <<uses>>
+Alien4Cloud ..> Cloudify : <<uses>>
+Cloud_Topology_Designer ..> Alien4Cloud : <<uses>>
+DICER ..> Cloudify : <<uses>>
+Eclipse_Winery .. OpenTOSCA : <<same ecosystem>>
+RADON_IDE ..> Eclipse_Winery : <<uses>>
+RADON_IDE ..> xOpera_SaaS : <<uses>>
+RADON_IDE ..> xOpera_Template_Library : <<uses>>
+Cloudify <.. MSO4SC_HPC : <<plugins>>
+TORCH ..> tosca_parser : <<uses>>
+Turandot ..> Puccini : <<uses>>
+Unfurl ..> tosca_parser : <<uses>>
+xOpera_SaaS ..> xOpera_Opera : <<uses>>
+Tacker ..> tosca_parser : <<uses>>
+Cloudnet_TOSCA_Toolbox ..up..> xOpera_Opera : <<applied to>>
+Cloudnet_TOSCA_Toolbox ..up..> TORCH : <<applied to>>
+TOSCA_toolbox ..> Cloudnet_TOSCA_Toolbox : <<uses>>
+Heat_Translator ..> tosca_parser : <<uses>>
+TOSCA_toolbox .up[hidden]. Cloudnet_TOSCA_Toolbox
+Heat_Translator .up[hidden]. tosca_parser
+Heat_Translator .up[hidden]. tosca_parser
+EU_Funded_Projects --[hidden]-- TOSCA_Modeling_Tools
+TOSCA_Modeling_Tools -[hidden]- TOSCA_Marketplaces
+TOSCA_Marketplaces --[hidden]-- TOSCA_Orchestrators
+TOSCA_Orchestrators --[hidden]-- TOSCA_Developer_Tools
+TOSCA_Developer_Tools --[hidden]-- Open_Source_Communities
 @enduml

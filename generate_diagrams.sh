@@ -1,6 +1,7 @@
 #! /bin/sh
 ######################################################################
 #
+# TOSCA Implementation Landscape
 # Copyright (c) 2021 Inria
 #
 # This software is distributed under the Apache License 2.0
@@ -11,8 +12,12 @@
 #
 ######################################################################
 
+# Generate the PlantUML file from the dataset
+./yaml2puml.py TOSCA-Implementation-Landscape.yaml
+
+# Generate PlantUML diagrams
 for format in png svg
 do
-  echo Generating TOSCA-Implementation-Landscape.${format}
+  echo Generate TOSCA-Implementation-Landscape.${format}
   java -jar plantuml.jar -T${format} TOSCA-Implementation-Landscape.puml
 done
