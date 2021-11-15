@@ -1,5 +1,12 @@
 @startuml
 Title **TOSCA Implementation Landscape**
+package "**Open Standards**" as Open_Standards {
+  map "**ETSI GS NFV-SOL 001**" as ETSI_GS_NFV_SOL_001 #PaleGreen {
+    TOSCA => 1.1 + 1.2 + 1.3
+    Target => NFV
+    Links => [[https://www.etsi.org/deliver/etsi_gs/NFV-SOL/001_099/001/03.05.01_60/gs_NFV-SOL001v030501p.pdf Spec v3.5.1]] [[https://forge.etsi.org/rep/nfv/SOL001 Forge]]
+  }
+}
 package "**EU Funded Projects**" as EU_Funded_Projects {
   map "**CELAR**" as CELAR #DarkRed {
     Links => [[https://github.com/CELAR <img:icons/GitHub.png{scale=0.5}>]]
@@ -304,13 +311,15 @@ Turandot ..> Puccini : <<uses>>
 Unfurl ..> tosca_parser : <<uses>>
 xOpera_SaaS ..> xOpera_Opera : <<uses>>
 Tacker ..> tosca_parser : <<uses>>
-Cloudnet_TOSCA_Toolbox ..up..> xOpera_Opera : <<applied to>>
+Cloudnet_TOSCA_Toolbox ..up..> ETSI_GS_NFV_SOL_001 : <<applied to>>
 Cloudnet_TOSCA_Toolbox ..up..> TORCH : <<applied to>>
+Cloudnet_TOSCA_Toolbox ..up..> xOpera_Opera : <<applied to>>
 TOSCA_toolbox ..> Cloudnet_TOSCA_Toolbox : <<uses>>
 Heat_Translator ..> tosca_parser : <<uses>>
 TOSCA_toolbox .up[hidden]. Cloudnet_TOSCA_Toolbox
 Heat_Translator .up[hidden]. tosca_parser
 Heat_Translator .up[hidden]. tosca_parser
+Open_Standards --[hidden]-- EU_Funded_Projects
 EU_Funded_Projects --[hidden]-- TOSCA_Modeling_Tools
 TOSCA_Modeling_Tools -[hidden]- TOSCA_Marketplaces
 TOSCA_Marketplaces --[hidden]-- TOSCA_Orchestrators

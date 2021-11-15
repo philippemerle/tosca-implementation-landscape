@@ -44,6 +44,7 @@ ARROWS = [
     "TOSCA_toolbox .up[hidden]. Cloudnet_TOSCA_Toolbox",
     "Heat_Translator .up[hidden]. tosca_parser",
     "Heat_Translator .up[hidden]. tosca_parser",
+    "Open_Standards --[hidden]-- EU_Funded_Projects",
     "EU_Funded_Projects --[hidden]-- TOSCA_Modeling_Tools",
     "TOSCA_Modeling_Tools -[hidden]- TOSCA_Marketplaces",
     "TOSCA_Marketplaces --[hidden]-- TOSCA_Orchestrators",
