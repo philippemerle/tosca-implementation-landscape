@@ -69,8 +69,9 @@ $ ./generate_diagrams.sh
 ```
 
 Let's note that following required software need to be pre-installed:
-* [Java](https://www.java.com)
 * [Graphviz](https://graphviz.org/)
+* [Java](https://www.java.com)
+* [Python 3.x](https://www.python.org/) with [PyYAML](https://pypi.org/project/PyYAML/) installed
 
 ## Contributions
 
