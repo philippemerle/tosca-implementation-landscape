@@ -1,0 +1,501 @@
+######################################################################
+#
+# TOSCA Implementation Landscape
+# Copyright (c) 2021 Inria
+#
+# This software is distributed under the Apache License 2.0
+# the text of which is available at http://www.apache.org/licenses/LICENSE-2.0
+# or see the "LICENSE-2.0.txt" file for more details.
+#
+# Author: Philippe Merle <philippe.merle@inria.fr>
+#
+######################################################################
+
+EU Funded Projects:
+  CELAR:
+    Status: INACTIVE
+    Links:
+      GitHub: https://github.com/CELAR
+    contributes:
+      - c-Eclipse
+
+  DICE:
+    Status: INACTIVE
+    Links:
+      GitHub: https://github.com/dice-project
+    contributes:
+      - DICER
+
+  INDIGO - DataCloud:
+    Status: ACTIVE
+    Links:
+      Website: https://www.indigo-datacloud.eu
+      GitHub: https://github.com/indigo-dc
+    hosts:
+      - INDIGO PaaS Orchestrator
+
+  SeaClouds:
+    Status: INACTIVE
+#    TOSCA: 1.0
+#    Usage: unknown
+#    Nature: Open source
+#    Language: Java
+    Links:
+      Website: http://www.seaclouds-project.eu
+      GitHub: https://github.com/SeaCloudsEU
+    uses:
+      - Alien4Cloud
+
+  Radon:
+    Status: ACTIVE
+    Links:
+      Website: https://radon-h2020.eu
+      GitHub: https://github.com/radon-h2020
+    contributes:
+      - RADON IDE
+      - OpenTOSCA
+
+  Sodalite:
+    Status: ACTIVE
+    Links:
+      Website: https://www.sodalite.eu
+      GitHub: https://github.com/SODALITE-EU
+    uses:
+      - xOpera Opera
+
+Open Source Communities:
+  OpenStack:
+    Status: ACTIVE
+    Links:
+      Website: https://www.openstack.org
+      GitHub: https://github.com/openstack
+    hosts:
+      - tosca-parser
+      - Heat-Translator
+      - Tacker
+
+  ONAP:
+    Status: ACTIVE
+    Links:
+      Website: https://www.onap.org
+      GitHub: https://github.com/onap
+    hosts:
+      - JTOSCA parser
+
+  Open Baton:
+    Status: ACTIVE
+    Links:
+      Website: https://openbaton.github.io
+      GitHub: https://github.com/openbaton
+
+  OPNFV:
+    Status: ACTIVE
+    Links:
+      Website: https://www.opnfv.org
+
+TOSCA Modeling Tools:
+  Alien4Cloud:
+    Status: ACTIVE
+    TOSCA:
+      - 1.0
+      - alien_dsl
+    Target: Any cloud
+    Usage: Webapp
+    Nature: Open source
+    Language: Java
+    Links:
+      Website: http://alien4cloud.github.io
+      GitHub: https://github.com/alien4cloud
+    uses:
+      - Yorc
+      - Cloudify
+
+  Cloud Topology Designer:
+    Status: ACTIVE
+    TOSCA:
+      - 1.0
+      - alien_dsl
+    Target: Open Telekom Cloud
+    Usage: SaaS
+    Nature: Commercial product # from T-Systems
+    Links:
+      SaaS: https://designer.otc-service.com
+    uses:
+      - Alien4Cloud
+
+  c-Eclipse:
+    Status: INACTIVE
+    TOSCA: Unknown
+    Usage:
+      - Eclipse
+    Nature: Open source
+    Language: Java
+    Links:
+      GitHub: https://github.com/CELAR/c-Eclipse
+
+  DICER:
+    Status: INACTIVE
+    TOSCA: |
+      cloudify_dsl_1_x
+      where x in [1, 2, 3]
+    Usage:
+      - Eclipse
+    Nature: Open source
+    Language: Java
+    Links:
+      GitHub: https://github.com/dice-project/DICER
+    uses:
+      - Cloudify
+
+  Eclipse Winery:
+    Status: ACTIVE
+    TOSCA:
+      - XML
+      - 1.3
+    Usage:
+      - Webapp
+      - Eclipse
+    Nature: Open source
+    Language: Java
+    Links:
+      Website: https://projects.eclipse.org/projects/soa.winery
+    same ecosystem:
+      - OpenTOSCA
+
+  EnterpriseWeb:
+    Status: ACTIVE
+    TOSCA: Unknown
+    Usage: Unknown
+    Nature: Commercial product
+    Links:
+      Website: https://enterpriseweb.com
+
+  RADON IDE:
+    Status: ACTIVE
+    TOSCA: 1.3
+    Usage: Webapp
+    Nature: Open source
+    Language: Java
+    Links:
+      GitHub: https://github.com/radon-h2020/radon-ide
+    uses:
+      - Eclipse Winery
+      - xOpera SaaS
+      - xOpera Template Library
+
+TOSCA Marketplaces:
+  xOpera Template Library:
+    Status: ACTIVE
+    TOSCA: Any
+    Usage: SaaS
+    Nature: XLAB property
+    Links:
+      SaaS: https://template-library-xopera.xlab.si
+
+TOSCA Orchestrators:
+  Cisco NSO:
+    Status: ACTIVE
+    TOSCA: Unknown
+    Target: Unknown
+    Usage: Unknown
+    Nature: Commercial product
+    Links:
+      Website: https://www.cisco.com/c/en/us/products/cloud-systems-management/network-services-orchestrator/index.html
+
+  CPLANE.ai:
+    Status: ACTIVE
+    TOSCA: Unknown
+    Target: Unknown
+    Usage: Unknown
+    Nature: Commercial product
+    Links:
+      Website: https://cplaneai.com
+
+  Itential:
+    Status: ACTIVE
+    TOSCA: Unknown
+    Target: Unknown
+    Usage: Unknown
+    Nature: Commercial product
+    Links:
+      Website: https://www.itential.com/products/automation-platform
+
+  Ubicity Orchestrator:
+    Status: ACTIVE
+    TOSCA:
+      - 1.3
+      - 2.0
+    Target: Any cloud
+    Usage: CLI
+    Nature: Commercial product
+    Links:
+      Website: https://ubicity.com/products.html
+
+  Yorc:
+    Status: ACTIVE
+    TOSCA: 1.2
+    Target: Any cloud
+    Usage: CLI
+    Nature: Open source
+    Language: Go
+    Links:
+      Website: https://ystia.github.io
+      GitHub: https://github.com/ystia/yorc
+
+  Cloudify:
+    Status: ACTIVE
+    TOSCA: |
+      Cloudify DSL
+      TOSCA-inspired dialect
+    Target: Any cloud
+    Usage: CLI
+    Nature:
+      - Open source
+      - Commercial product
+    Language: Python
+    Links:
+      Website: https://cloudify.co
+      GitHub: https://github.com/cloudify-cosmo
+    plugins:
+      - MSO4SC HPC
+
+  MSO4SC HPC:
+    Status: ACTIVE
+    TOSCA: Cloudify DSL
+    Usage: Plugin
+    Nature: Open source
+    Language: Python
+    Links:
+      GitHub: https://github.com/MSO4SC/cloudify-hpc-plugin
+
+  AriaTosca:
+    Status: INACTIVE
+    TOSCA: 1.0
+    Target: Any cloud
+    Usage: CLI
+    Nature: Open source
+    Language: Python
+    Links:
+      Website: http://incubator.apache.org/projects/ariatosca.html
+      GitHub: https://github.com/apache/incubator-ariatosca
+
+  INDIGO PaaS Orchestrator:
+    Status: ACTIVE
+    TOSCA:
+      - 1.0
+      - NFV 1.0
+    Target: Any cloud
+    Usage: Webapp
+    Nature: Open source
+    Language: Java
+    Links:
+      GitHub: https://github.com/indigo-dc/orchestrator
+
+  TORCH:
+    Status: ACTIVE
+    TOSCA: 1.0
+    Target:
+      - OpenStack
+      - Azure
+      - null # separation
+      - Kubernetes
+      - Docker Swarm
+    Usage: Webapp
+    Nature: Open source
+    Language:
+      - Java
+      - JavaScript
+      - Php
+      - Python
+    Links:
+      GitHub: https://github.com/unict-cclab/TORCH
+    uses:
+      - tosca-parser
+
+  Turandot:
+    Status: ACTIVE
+    TOSCA: 1.3
+    Target: Kubernetes
+    Usage: CLI
+    Nature: Open source
+    Language: Go
+    Links:
+      Website: https://turandot.puccini.cloud
+      GitHub: https://github.com/tliron/turandot
+    uses:
+      - Puccini
+
+  Unfurl:
+    Status: ACTIVE
+    TOSCA:
+      - 1.3
+      - unfurl_1_0_0
+    Target: Any cloud
+    Usage: CLI
+    Nature: Open source
+    Language: Python
+    Links:
+      Website: https://unfurl.run
+      GitHub: https://github.com/onecommons/unfurl
+    uses:
+      - tosca-parser
+
+  OpenTOSCA:
+    Status: ACTIVE
+    TOSCA: 1.3
+    Target: Any cloud
+    Usage: Webapp
+    Nature: Open source
+    Language: Java
+    Links:
+      Website: https://www.opentosca.org
+      GitHub: https://github.com/OpenTOSCA
+
+  TosKer:
+    Status: ACTIVE
+    TOSCA: 1.0
+    Target: Docker
+    Usage: CLI
+    Nature: Open source
+    Language: Python
+    Links:
+      GitHub: https://github.com/di-unipi-socc/tosker
+
+  xOpera Opera:
+    Status: ACTIVE
+    TOSCA: 1.3
+    Target: Any cloud
+    Usage: CLI
+    Nature: Open source
+    Language: Python
+    Links:
+      GitHub: https://github.com/xlab-si/xopera-opera
+
+  xOpera SaaS:
+    Status: ACTIVE
+    TOSCA: 1.3
+    Target: Any cloud
+    Usage: SaaS
+    Nature: XLAB property
+    Links:
+      SaaS: https://saas-xopera.xlab.si
+    uses:
+      - xOpera Opera
+
+  Tacker:
+    Status: ACTIVE
+    TOSCA:
+      - 1.1
+      - NFV 1.0
+    Target: OpenStack
+    Usage: CLI
+    Nature: Open source
+    Language: Python
+    Links:
+      Website: https://wiki.openstack.org/wiki/Tacker
+      GitHub: https://github.com/openstack/tacker
+    uses:
+      - tosca-parser
+
+TOSCA Developer Tools:
+  Cloudnet TOSCA Toolbox:
+    Status: ACTIVE
+    TOSCA:
+      - 1.0
+      - 1.1
+      - 1.2
+      - 1.3
+      - 2.0
+    Usage: CLI
+    Nature: Open source
+    Language: Python
+    Links:
+      GitHub: https://github.com/Orange-OpenSource/Cloudnet-TOSCA-toolbox
+    applied to:
+      - xOpera Opera
+      - TORCH
+# TODO
+#      - Turandot
+#      - TosKer
+#      - ...
+
+  TOSCA toolbox:
+    Status: ACTIVE
+    TOSCA:
+      - 1.0
+      - 1.1
+      - 1.2
+      - 1.3
+      - 2.0
+    Usage: SaaS
+    Nature: Orange property
+    Links:
+      SaaS: https://toscatoolbox.orange.com
+    uses:
+      - Cloudnet TOSCA Toolbox
+
+  Heat-Translator:
+    Status: ACTIVE
+    TOSCA: 1.0
+    Target: OpenStack Heat
+    Usage: CLI
+    Nature: Open source
+    Language: Python
+    Links:
+      Website: https://wiki.openstack.org/wiki/Heat-Translator
+      GitHub: https://github.com/openstack/heat-translator
+    uses:
+      - tosca-parser
+
+  TosKeriser:
+    Status: ACTIVE
+    TOSCA: 1.0
+    Target: Docker
+    Usage: CLI
+    Nature: Open source
+    Language: Python
+    Links:
+      GitHub: https://github.com/di-unipi-socc/TosKeriser
+
+  categories:
+    TOSCA Parsers:
+      Puccini:
+        Status: ACTIVE
+        TOSCA:
+          - 1.0
+          - 1.1
+          - 1.2
+          - 1.3
+          - 2.0
+          - null # separation
+          - cloudify_dsl_1_3
+          - Heat
+        Usage:
+          - CLI
+          - Webapp
+        Nature: Open source
+        Language: Go
+        Links:
+          Website: https://puccini.cloud
+          GitHub: https://github.com/tliron/puccini
+
+      JTOSCA parser:
+        Status: ACTIVE
+        TOSCA: 1.0
+        Usage: lib
+        Nature: Open source
+        Language: Java
+        Links:
+          GitHub: https://github.com/onap/sdc-jtosca
+
+      tosca-parser:
+        Status: ACTIVE
+        TOSCA:
+          - 1.0
+          - NFV
+        Usage: CLI
+        Nature: Open source
+        Language: Python
+        Links:
+          Website: https://wiki.openstack.org/wiki/TOSCA-Parser
+          GitHub: https://github.com/openstack/tosca-parser
