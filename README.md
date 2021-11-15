@@ -54,6 +54,8 @@ All these TOSCA implementations are part of a global TOSCA ecosystem. To underst
 * **`<<plugins>>`**: A source implementation is a plugin of another target implementation. For instance, **MSO4SC HPC** is a plugin for **Cloudify** orchestrator.
 * **`<<same ecosystem>>`**: Two independent TOSCA implementations are developed jointly. For instance, both **Eclipse Winery** and **OpenTOSCA** are developed by the same academia research group.
 
+All these pieces of information are stored in the [TOSCA Implementation Landscape dataset](TOSCA-Implementation-Landscape.yaml).
+
 I hope this small classification, sets of both criteria and relationships could help you to select the TOSCA implementations that match both your business and technical requirements. Don't hesitate to propose/ask for other new helpful category/criteria/relationship.
  
 ### Generating the visual diagrams
