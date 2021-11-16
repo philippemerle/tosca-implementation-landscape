@@ -40,16 +40,21 @@ RELATIONSHIPS = {
 }
 
 # Arrows to force the PlantUML layout
-ARROWS = [
+ARROWS_TO_FORCE_THE_LAYOUT = [
     "TOSCA_toolbox .up[hidden]. Cloudnet_TOSCA_Toolbox",
     "Heat_Translator .up[hidden]. tosca_parser",
     "Heat_Translator .up[hidden]. tosca_parser",
-    "Open_Standards --[hidden]-- EU_Funded_Projects",
-    "EU_Funded_Projects --[hidden]-- TOSCA_Modeling_Tools",
-    "TOSCA_Modeling_Tools -[hidden]- TOSCA_Marketplaces",
-    "TOSCA_Marketplaces --[hidden]-- TOSCA_Orchestrators",
-    "TOSCA_Orchestrators --[hidden]-- TOSCA_Developer_Tools",
-    "TOSCA_Developer_Tools --[hidden]-- Open_Source_Communities",
+]
+
+# Vertical layout of categories
+LAYOUT_OF_CATEGORIES = [
+    "Open Standards",
+    "EU Funded Projects",
+    "TOSCA Modeling Tools",
+    "TOSCA Marketplaces",
+    "TOSCA Orchestrators",
+    "TOSCA Developer Tools",
+    "Open Source Communities",
 ]
 
 def to_id(label):
@@ -128,7 +133,11 @@ with open(filename, 'w') as output_stream:
     arrows = []
     for category_name, category_values in dataset.items():
         generate_category(category_name, category_values, arrows)
-    arrows.extend(ARROWS)
+    arrows.extend(ARROWS_TO_FORCE_THE_LAYOUT)
+    previous_category = LAYOUT_OF_CATEGORIES[0]
+    for category in LAYOUT_OF_CATEGORIES[1:]:
+        arrows.append("%s --[hidden]-- %s" % (to_id(previous_category), to_id(category)))
+        previous_category = category
     for arrow in arrows:
         print(arrow, file=output_stream)
     print("@enduml", file=output_stream)
