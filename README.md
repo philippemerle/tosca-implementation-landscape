@@ -2,6 +2,8 @@
 
 The **TOSCA Implementation Landscape** is a visual representation of the list of [Known TOSCA Implementations](https://github.com/oasis-open/tosca-community-contributions/wiki/Known-TOSCA-Implementations) maintained by the OASIS TOSCA TC, see these [slides](https://www.oasis-open.org/committees/download.php/67709/TOSCA%20Webinar-2020-09-09.pdf) also.
 
+The **TOSCA Implementation Landscape** was announced on [Twitter](https://twitter.com/merle_philippe/status/1459981831126798352) and [LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:6865756530646548480/).
+
 ## TOSCA Implementation Landscape
 
 The **TOSCA Implementation Landscape** is depicted in the following big picture (click on it to enlarge it):
