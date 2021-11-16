@@ -64,6 +64,9 @@ I hope this small classification, sets of both criteria and relationships could 
 
 ### Generating the visual diagrams
 
+Following figure depicts the overall generation process:
+![Generation Process](Generation%20Process.png)
+
 [PlantUML](https://plantuml.com) is used to generate the visual **TOSCA Implementation Landscape** diagrams from the collected data set.
 
 To (re)generate these diagrams, let's type:
