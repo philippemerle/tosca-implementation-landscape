@@ -29,6 +29,17 @@ ICONS = [
     "Website",
 ]
 
+# Criteria
+CRITERIA = {
+    "Status": None,
+    "TOSCA":    { "sep": " + " },
+    "Target":   { "sep": " + " },
+    "Usage":    { "sep": " + " },
+    "Nature":   { "sep": "\\n" },
+    "Language": { "sep": " + " },
+    "Links":    { "sep": " " },
+}
+
 # Mapping of relationships to PlantUML arrows
 RELATIONSHIPS = {
     "contributes": "o--",
@@ -104,12 +115,8 @@ def generate_category(category_name, category_values, arrows, indent=''):
             line = "  " + criteria_name + " => "
             if criteria_name == "Status":
                 continue # skip it as already handled
-            elif criteria_name in ["TOSCA", "Target", "Usage", "Language"]:
-                line += serialize(criteria_value, sep=" + ")
-            elif criteria_name == "Nature":
-                line += serialize(criteria_value, sep="\\n")
-            elif criteria_name == "Links":
-                line += serialize(criteria_value, sep=" ")
+            elif criteria_name in CRITERIA:
+                line += serialize(criteria_value, sep=CRITERIA[criteria_name]["sep"])
             elif criteria_name in RELATIONSHIPS:
                 source_id = to_id(impl_name)
                 arrow = RELATIONSHIPS[criteria_name]
