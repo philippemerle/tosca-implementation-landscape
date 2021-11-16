@@ -56,7 +56,7 @@ All these TOSCA implementations are part of a global TOSCA ecosystem. To underst
 * **`<<uses>>`**: A source implementation uses another target implementation. For instance, **Alien4Cloud** modeling tool uses both **Cloudify** and **Yorc** as TOSCA orchestrators.
 * **`<<plugins>>`**: A source implementation is a plugin of another target implementation. For instance, **MSO4SC HPC** is a plugin for **Cloudify** orchestrator.
 * **`<<same ecosystem>>`**: Two independent TOSCA implementations are developed jointly. For instance, both **Eclipse Winery** and **OpenTOSCA** are developed by the same academia research group.
-* **`<<applied to>>`**: A source implementation is applied to another target implementation. For instance, my [**TOSCA toolbox**](https://github.com/Orange-OpenSource/Cloudnet-TOSCA-toolbox) was applied to all the examples provided by **TORCH** and **xOpera Opera** orchestrators.
+* **`<<applied to>>`**: A source implementation is applied to another target implementation. For instance, my [**TOSCA toolbox**](https://github.com/Orange-OpenSource/Cloudnet-TOSCA-toolbox) was applied to all the examples provided by **TORCH** and **xOpera Opera** orchestrators, and the **ETSI GS NFV-SOL 001** standard.
 
 All these pieces of information are stored in the [TOSCA Implementation Landscape dataset](TOSCA-Implementation-Landscape.yaml).
 
