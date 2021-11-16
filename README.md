@@ -10,6 +10,8 @@ The **TOSCA Implementation Landscape** is depicted in the following big picture 
 
 See also the [interactive version of the **TOSCA Implementation Landscape**](https://raw.githubusercontent.com/philippemerle/tosca-implementation-landscape/main/TOSCA-Implementation-Landscape.svg), i.e., SVG + hyperlinks.
 
+Let's note that the **TOSCA Implementation Landscape** evolves day after day (see [history](https://github.com/philippemerle/tosca-implementation-landscape/commits/main/TOSCA-Implementation-Landscape.png)) because this landscape is **automatically generated** from this [dataset](TOSCA-Implementation-Landscape.yaml). So, [each commit on this dataset]() implies the regeneration of the **TOSCA Implementation Landscape**.
+
 ## Applied Methodology
 
 The most crucial methodological points in any study are objectivity and exhaustivity. I did my best.
