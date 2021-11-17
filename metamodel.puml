@@ -1,0 +1,69 @@
+@startuml
+
+class Landscape {}
+
+class Category {
+  +name: string
+}
+
+enum Status {
+  +ACTIVE
+  +INACTIVE
+}
+
+class Link {
+  +name: string
+  +url : string
+}
+
+abstract class Implementation {
+  +name: string
+}
+
+abstract class Community extends Implementation {
+}
+
+class **EUFundedProject** extends Community {
+}
+
+class **OpenSourceCommunity** extends Community {
+}
+
+abstract class ToscaImplementation extends Implementation {
+  +supported_tosca_profiles: list<string>
+  +target_environments: list<string>
+}
+
+class **OpenStandard** extends ToscaImplementation {
+}
+
+abstract class SoftwareImplementation extends ToscaImplementation {
+  +usage_modes: list<string>
+  +programming_languages: list<string>
+}
+
+class **ModelingTool** extends SoftwareImplementation {
+}
+
+class **MarketPlace** extends SoftwareImplementation {
+}
+
+class **Orchestrator** extends SoftwareImplementation {
+}
+
+class **DeveloperTool** extends SoftwareImplementation {
+}
+
+Landscape *-- "*" Category : categories
+Category *- "*" Implementation : implementations
+Category *-up- "*" Category : categories
+Implementation *-up- Status : status
+Implementation *-up- "*" Link : links
+"**EUFundedProject**" o-right- "*" SoftwareImplementation : contributes
+Community o-right- "*" SoftwareImplementation : hosts
+Implementation -up-> "*" Implementation : uses
+SoftwareImplementation -up-> "*" SoftwareImplementation : plugins
+
+"**DeveloperTool**" -[hidden] "**OpenStandard**"
+
+@end

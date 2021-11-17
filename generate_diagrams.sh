@@ -16,8 +16,11 @@
 ./yaml2puml.py TOSCA-Implementation-Landscape.yaml
 
 # Generate PlantUML diagrams
-for format in png svg
+for filename in metamodel TOSCA-Implementation-Landscape
 do
-  echo Generate TOSCA-Implementation-Landscape.${format}
-  java -jar plantuml.jar -T${format} TOSCA-Implementation-Landscape.puml
+  for format in png svg
+  do
+    echo Generate ${filename}.${format}
+    java -jar plantuml.jar -T${format} ${filename}.puml
+  done
 done

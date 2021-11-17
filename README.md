@@ -60,7 +60,11 @@ All these TOSCA implementations are part of a global TOSCA ecosystem. To underst
 * **`<<same ecosystem>>`**: Two independent TOSCA implementations are developed jointly. For instance, both **Eclipse Winery** and **OpenTOSCA** are developed by the same academia research group.
 * **`<<applied to>>`**: A source implementation is applied to another target implementation. For instance, my [**TOSCA toolbox**](https://github.com/Orange-OpenSource/Cloudnet-TOSCA-toolbox) was applied to all the examples provided by **TORCH** and **xOpera Opera** orchestrators, and the **ETSI GS NFV-SOL 001** standard.
 
-All these pieces of information are stored in the [TOSCA Implementation Landscape dataset](TOSCA-Implementation-Landscape.yaml).
+Following figure depicts a metamodel encompassing all these categories, criteria and relationships.
+
+![Metamodel](metamodel.png)
+
+Then, this metamodel is instantiated and filled: See the [TOSCA Implementation Landscape dataset](TOSCA-Implementation-Landscape.yaml).
 
 I hope this small classification, sets of both criteria and relationships could help you to select the TOSCA implementations that match both your business and technical requirements. Don't hesitate to propose/ask for other new helpful category/criteria/relationship.
 
