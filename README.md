@@ -35,7 +35,7 @@ TOSCA users should be mainly interested by the **TOSCA Modeling Tools**, **TOSCA
 
 ![A journey with TOSCA](A%20journey%20with%20TOSCA.png)
 
-The next step was to select a set of criteria to characterize each TOSCA implementation. This set should be smallest to ease the reading of this study but enough large to provide pertinent information to TOSCA users (you). The currently selected six criteria are the following:
+The next step was to select a set of criteria to characterize each TOSCA implementation. This set should be smallest to ease the reading of this study but enough large to provide pertinent information to TOSCA users (you). The currently selected seven criteria are the following:
 * **Activity**: This is the level of activities of a TOSCA implementation.  The two only levels are:
   * **Active**: By default, all TOSCA implementations are tagged as active and are represented by green maps.
   * **Inactive**: An implementation is tagged as inactive and is represented by a red map if it was retired, completed, or had no commits since several years. **CELAR**, **DICE** and **SeaClouds** EU projects are completed since several years ago. **AriaTosca** orchestrator was retired on 2018. There are no commits on **c-Eclipse** and **DICER** since 2015 and 2018, respectively.
