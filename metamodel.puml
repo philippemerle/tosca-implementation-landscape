@@ -62,7 +62,9 @@ Implementation *-up- "*" Link : links
 "**EUFundedProject**" o-right- "*" SoftwareImplementation : contributes
 Community o-right- "*" SoftwareImplementation : hosts
 Implementation -up-> "*" Implementation : uses
+Implementation --> "*" Implementation : same ecosystem
 SoftwareImplementation -up-> "*" SoftwareImplementation : plugins
+SoftwareImplementation --> "*" SoftwareImplementation : applied to
 
 "**DeveloperTool**" -[hidden] "**OpenStandard**"
 
