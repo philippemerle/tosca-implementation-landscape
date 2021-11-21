@@ -47,13 +47,16 @@ The next step was to select a set of criteria to characterize each TOSCA impleme
   * **CLI**: Command-Line Interface (CLI).
   * **Webapp**: A web application deployed on the end-user environment.
   * **SaaS**: A Software-as-Service (SaaS) already deployed by a provider.
-* **Nature**: The implementation is **Open source** and/or a **Commercial product**.
+* **Nature**: A TOSCA implementation could be
+  * **Commercial product**: The implementation or services around the implementation are sold by a commercial company (or several). Exemplary implementations are **Cloud Topology Designer**, **Cloudify** and **Ubicity Orchestrator**.
+  * **Academia product**: The implementation is developed since several years by an academia research group. Exemplary implementations are **Cloudnet TOSCA Toolbox**, **Eclipse Winery** and **OpenTOSCA**.
+  * **Academia prototype**: The implementation was prototyped as proof of concept of one (or a series of) academia scientific papers. Exemplary implementations are **Sommelier**, **TORCH**, **TosKer**, and **TosKeriser**.
+  * **Open source**: The source code of the implementation is available in a public accessible code repository, such as GitHub for instance. A lot of implementations are open source, so I prefer to name none.
 * **Language**: Only for open source implementations, this indicates the programming language(s) used to develop the open source product.
 * **Links**: This takes the following values:
   * **![Website](icons/Website.png)**: This link points to the address of the official Web site of the TOSCA implementation.
   * **![GitHub](icons/GitHub.png)**: This link points to the GitHub repository hosting the open source code for the TOSCA implementation.
   * **![SaaS](icons/SaaS.png)**: This link points to the address where the Software-as-Service is deployed.
-
 All these TOSCA implementations are part of a global TOSCA ecosystem. To understand this ecosystem, this is important to capture the relationships between these TOSCA implementations. Following lists six types of pertinent relationships (represented by tagged arrows in the big picture):
 * **`<<contributes>>`**: An EU funded project contributed to the development of a TOSCA software tool. For instance, **RADON** EU project contributed to **OpenTOSCA** orchestrator.
 * **`<<hosts>>`**: An open source community (or EU project) hosts a TOSCA implementation. For instance, **OpenStack** hosts **tosca-parser**, **Heat-Translator** and **Tacker** open source projects.
