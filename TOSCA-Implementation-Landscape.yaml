@@ -283,7 +283,7 @@ TOSCA Orchestrators:
       - MSO4SC HPC
 
   MSO4SC HPC:
-    Status: ACTIVE
+    Status: SLEEPING
     TOSCA: Cloudify DSL
     Usage: Plugin
     Nature: Open source
@@ -379,7 +379,7 @@ TOSCA Orchestrators:
       GitHub: https://github.com/OpenTOSCA
 
   TosKer:
-    Status: ACTIVE
+    Status: SLEEPING
     TOSCA: 1.0
     Target: Docker
     Usage: CLI
@@ -480,7 +480,7 @@ TOSCA Developer Tools:
       - tosca-parser
 
   TosKeriser:
-    Status: ACTIVE
+    Status: SLEEPING
     TOSCA: 1.0
     Target: Docker
     Usage: CLI
@@ -514,7 +514,7 @@ TOSCA Developer Tools:
           GitHub: https://github.com/tliron/puccini
 
       JTOSCA parser:
-        Status: ACTIVE
+        Status: SLEEPING
         TOSCA: 1.0
         Usage: lib
         Nature: Open source

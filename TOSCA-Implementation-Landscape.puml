@@ -150,7 +150,7 @@ package "**TOSCA Orchestrators**" as TOSCA_Orchestrators {
     Language => Python
     Links => [[https://cloudify.co <img:icons/Website.png{scale=0.5}>]] [[https://github.com/cloudify-cosmo <img:icons/GitHub.png{scale=0.5}>]]
   }
-  map "**MSO4SC HPC**" as MSO4SC_HPC #PaleGreen {
+  map "**MSO4SC HPC**" as MSO4SC_HPC #Orange {
     TOSCA => Cloudify DSL
     Usage => Plugin
     Nature => Open source
@@ -205,7 +205,7 @@ package "**TOSCA Orchestrators**" as TOSCA_Orchestrators {
     Language => Java
     Links => [[https://www.opentosca.org <img:icons/Website.png{scale=0.5}>]] [[https://github.com/OpenTOSCA <img:icons/GitHub.png{scale=0.5}>]]
   }
-  map "**TosKer**" as TosKer #PaleGreen {
+  map "**TosKer**" as TosKer #Orange {
     TOSCA => 1.0
     Target => Docker
     Usage => CLI
@@ -259,7 +259,7 @@ package "**TOSCA Developer Tools**" as TOSCA_Developer_Tools {
     Language => Python
     Links => [[https://wiki.openstack.org/wiki/Heat-Translator <img:icons/Website.png{scale=0.5}>]] [[https://github.com/openstack/heat-translator <img:icons/GitHub.png{scale=0.5}>]]
   }
-  map "**TosKeriser**" as TosKeriser #PaleGreen {
+  map "**TosKeriser**" as TosKeriser #Orange {
     TOSCA => 1.0
     Target => Docker
     Usage => CLI
@@ -275,7 +275,7 @@ package "**TOSCA Developer Tools**" as TOSCA_Developer_Tools {
       Language => Go
       Links => [[https://puccini.cloud <img:icons/Website.png{scale=0.5}>]] [[https://github.com/tliron/puccini <img:icons/GitHub.png{scale=0.5}>]]
     }
-    map "**JTOSCA parser**" as JTOSCA_parser #PaleGreen {
+    map "**JTOSCA parser**" as JTOSCA_parser #Orange {
       TOSCA => 1.0
       Usage => lib
       Nature => Open source

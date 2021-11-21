@@ -36,27 +36,34 @@ TOSCA users should be mainly interested by the **TOSCA Modeling Tools**, **TOSCA
 ![A journey with TOSCA](A%20journey%20with%20TOSCA.png)
 
 The next step was to select a set of criteria to characterize each TOSCA implementation. This set should be smallest to ease the reading of this study but enough large to provide pertinent information to TOSCA users (you). The currently selected seven criteria are the following:
+
 * **Activity**: This is the level of activities of a TOSCA implementation.  The two only levels are:
-  * **Active**: By default, all TOSCA implementations are tagged as active and are represented by green maps.
-  * **Inactive**: An implementation is tagged as inactive and is represented by a red map if it was retired, completed, or had no commits since several years. **CELAR**, **DICE** and **SeaClouds** EU projects are completed since several years ago. **AriaTosca** orchestrator was retired on 2018. There are no commits on **c-Eclipse** and **DICER** since 2015 and 2018, respectively.
+  * **Active**: An implementation is tagged as active and are represented by a green map when observable activities (e.g. commits) were done during the last year. More than two-thirds of implementations are active.
+  * **Sleeping**: An implementation is tagged as sleeping and are represented by an orange map when no activities (e.g. commits) were observed during the last year. They are just sleeping before coming back active or becoming inactive. Sleeping implementations are **JTOSCA**, **MSO4SC HPC**, **Sommelier**, **TosKer**, and **TosKeriser**.
+  * **Inactive**: An implementation is tagged as inactive and is represented by a red map when it was retired, completed, or had no commits since several years. **CELAR**, **DICE** and **SeaClouds** EU projects are completed since several years ago. **AriaTosca** orchestrator was retired on 2018. There are no commits on **c-Eclipse** and **DICER** since 2015 and 2018, respectively.
   * **Unknown**: For some TOSCA implementation, there is not enough publicly available information to determinate their level of activities. They are represented by white maps. Exemplary implementations are **EnterpriseWeb**, **Cisco NSO**, **CPLANE.ai**, and **Itential**.
 
 * **TOSCA**: These are the TOSCA profile(s), i.e., `tosca_definitions_version` keyname, supported by the TOSCA implementation. For some implementations, this information was not found, so it is unknown. This is the case for **c-Eclipse**, **Cisco NSO**, **CPLANE.ai**, **EntrepriseWeb**, and **Itential** products. Some products added their proprietary profiles such as **Alien4Cloud** and **Unfurl**. Let's note that **Cloudify** only supports its own profiles.
+
 * **Target**: This is the target environment(s) where deployments can be done with the TOSCA implementation. A TOSCA orchestrator could potentially target any cloud such as **Cloudify**, **OpenTOSCA**, **Opera**, **Ubicity Orchestrator** and **Yorc**. Some TOSCA orchestrator targets a specific runtime environment: **Tacker** targets OpenStack only, **Turandot** targets Kubernetes only and **TosKer** targets Docker only.
+
 * **Usage**: This determinates how the end-user interacts with the TOSCA implementation, via a
   * **CLI**: Command-Line Interface (CLI).
   * **Webapp**: A web application deployed on the end-user environment.
   * **SaaS**: A Software-as-Service (SaaS) already deployed by a provider.
+
 * **Nature**: A TOSCA implementation could be
   * **Commercial product**: The implementation or services around the implementation are sold by a commercial company (or several). Exemplary implementations are **Cloud Topology Designer**, **Cloudify** and **Ubicity Orchestrator**.
   * **Academia product**: The implementation is developed since several years by an academia research group. Exemplary implementations are **Cloudnet TOSCA Toolbox**, **Eclipse Winery** and **OpenTOSCA**.
   * **Academia prototype**: The implementation was prototyped as proof of concept of one (or a series of) academia scientific papers. Exemplary implementations are **Sommelier**, **TORCH**, **TosKer**, and **TosKeriser**.
   * **Open source**: The source code of the implementation is available in a public accessible code repository, such as GitHub for instance. A lot of implementations are open source, so I prefer to name none.
+
 * **Language**: Only for open source implementations, this indicates the programming language(s) used to develop the open source product.
 * **Links**: This takes the following values:
   * **![Website](icons/Website.png)**: This link points to the address of the official Web site of the TOSCA implementation.
   * **![GitHub](icons/GitHub.png)**: This link points to the GitHub repository hosting the open source code for the TOSCA implementation.
   * **![SaaS](icons/SaaS.png)**: This link points to the address where the Software-as-Service is deployed.
+
 All these TOSCA implementations are part of a global TOSCA ecosystem. To understand this ecosystem, this is important to capture the relationships between these TOSCA implementations. Following lists six types of pertinent relationships (represented by tagged arrows in the big picture):
 * **`<<contributes>>`**: An EU funded project contributed to the development of a TOSCA software tool. For instance, **RADON** EU project contributed to **OpenTOSCA** orchestrator.
 * **`<<hosts>>`**: An open source community (or EU project) hosts a TOSCA implementation. For instance, **OpenStack** hosts **tosca-parser**, **Heat-Translator** and **Tacker** open source projects.

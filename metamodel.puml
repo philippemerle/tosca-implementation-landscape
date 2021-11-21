@@ -8,6 +8,7 @@ class Category {
 
 enum Status {
   +ACTIVE
+  +SLEEPING
   +INACTIVE
   +UNKNOWN
 }

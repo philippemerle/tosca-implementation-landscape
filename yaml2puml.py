@@ -18,6 +18,7 @@ import yaml
 # Mapping of activity levels to PlantUML colors
 COLORS = {
     "ACTIVE": "PaleGreen",
+    "SLEEPING": "Orange",
     "INACTIVE": "DarkRed",
     "UNKNOWN": "White",
 }
