@@ -175,7 +175,7 @@ TOSCA Modeling Tools:
       - OpenTOSCA
 
   EnterpriseWeb:
-    Status: ACTIVE
+    Status: UNKNOWN
     TOSCA: Unknown
     Usage: Unknown
     Nature: Commercial product
@@ -206,7 +206,7 @@ TOSCA Marketplaces:
 
 TOSCA Orchestrators:
   Cisco NSO:
-    Status: ACTIVE
+    Status: UNKNOWN
     TOSCA: Unknown
     Target: Unknown
     Usage: Unknown
@@ -215,7 +215,7 @@ TOSCA Orchestrators:
       Website: https://www.cisco.com/c/en/us/products/cloud-systems-management/network-services-orchestrator/index.html
 
   CPLANE.ai:
-    Status: ACTIVE
+    Status: UNKNOWN
     TOSCA: Unknown
     Target: Unknown
     Usage: Unknown
@@ -224,7 +224,7 @@ TOSCA Orchestrators:
       Website: https://cplaneai.com
 
   Itential:
-    Status: ACTIVE
+    Status: UNKNOWN
     TOSCA: Unknown
     Target: Unknown
     Usage: Unknown

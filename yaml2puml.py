@@ -19,6 +19,7 @@ import yaml
 COLORS = {
     "ACTIVE": "PaleGreen",
     "INACTIVE": "DarkRed",
+    "UNKNOWN": "White",
 }
 
 # Iconifiable labels

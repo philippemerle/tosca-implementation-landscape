@@ -78,7 +78,7 @@ package "**TOSCA Modeling Tools**" as TOSCA_Modeling_Tools {
     Language => Java
     Links => [[https://projects.eclipse.org/projects/soa.winery <img:icons/Website.png{scale=0.5}>]]
   }
-  map "**EnterpriseWeb**" as EnterpriseWeb #PaleGreen {
+  map "**EnterpriseWeb**" as EnterpriseWeb #White {
     TOSCA => Unknown
     Usage => Unknown
     Nature => Commercial product
@@ -101,21 +101,21 @@ package "**TOSCA Marketplaces**" as TOSCA_Marketplaces {
   }
 }
 package "**TOSCA Orchestrators**" as TOSCA_Orchestrators {
-  map "**Cisco NSO**" as Cisco_NSO #PaleGreen {
+  map "**Cisco NSO**" as Cisco_NSO #White {
     TOSCA => Unknown
     Target => Unknown
     Usage => Unknown
     Nature => Commercial product
     Links => [[https://www.cisco.com/c/en/us/products/cloud-systems-management/network-services-orchestrator/index.html <img:icons/Website.png{scale=0.5}>]]
   }
-  map "**CPLANE.ai**" as CPLANE_ai #PaleGreen {
+  map "**CPLANE.ai**" as CPLANE_ai #White {
     TOSCA => Unknown
     Target => Unknown
     Usage => Unknown
     Nature => Commercial product
     Links => [[https://cplaneai.com <img:icons/Website.png{scale=0.5}>]]
   }
-  map "**Itential**" as Itential #PaleGreen {
+  map "**Itential**" as Itential #White {
     TOSCA => Unknown
     Target => Unknown
     Usage => Unknown
