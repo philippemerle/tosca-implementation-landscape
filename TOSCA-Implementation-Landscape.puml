@@ -81,7 +81,7 @@ package "**TOSCA Modeling Tools**" as TOSCA_Modeling_Tools {
     Usage => Webapp + <img:icons/Eclipse.png{scale=0.5}>
     Nature => Academia product\nOpen source
     Language => Java
-    Links => [[https://projects.eclipse.org/projects/soa.winery <img:icons/Website.png{scale=0.5}>]]
+    Links => [[https://projects.eclipse.org/projects/soa.winery <img:icons/Website.png{scale=0.5}>]] [[https://github.com/eclipse/winery <img:icons/GitHub.png{scale=0.5}>]]
   }
   map "**EnterpriseWeb**" as EnterpriseWeb #White {
     TOSCA => Unknown
