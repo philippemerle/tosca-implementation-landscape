@@ -268,19 +268,19 @@ package "**TOSCA Developer Tools**" as TOSCA_Developer_Tools {
     Links => [[https://github.com/di-unipi-socc/TosKeriser <img:icons/GitHub.png{scale=0.5}>]]
   }
   package "**TOSCA Parsers**" as TOSCA_Parsers {
-    map "**Puccini**" as Puccini #PaleGreen {
-      TOSCA => 1.0 + 1.1 + 1.2 + 1.3 + 2.0 +\ncloudify_dsl_1_3 + Heat
-      Usage => CLI + Webapp
-      Nature => Open source
-      Language => Go
-      Links => [[https://puccini.cloud <img:icons/Website.png{scale=0.5}>]] [[https://github.com/tliron/puccini <img:icons/GitHub.png{scale=0.5}>]]
-    }
     map "**JTOSCA parser**" as JTOSCA_parser #Orange {
       TOSCA => 1.0
       Usage => lib
       Nature => Open source
       Language => Java
       Links => [[https://github.com/onap/sdc-jtosca <img:icons/GitHub.png{scale=0.5}>]]
+    }
+    map "**Puccini**" as Puccini #PaleGreen {
+      TOSCA => 1.0 + 1.1 + 1.2 + 1.3 + 2.0 +\ncloudify_dsl_1_3 + Heat
+      Usage => CLI + Webapp
+      Nature => Open source
+      Language => Go
+      Links => [[https://puccini.cloud <img:icons/Website.png{scale=0.5}>]] [[https://github.com/tliron/puccini <img:icons/GitHub.png{scale=0.5}>]]
     }
     map "**Sommelier**" as Sommelier #Orange {
       TOSCA => 1.0
@@ -321,6 +321,8 @@ Cloudify <.. MSO4SC_HPC : <<plugins>>
 TORCH ..> tosca_parser : <<uses>>
 Turandot ..> Puccini : <<uses>>
 Unfurl ..> tosca_parser : <<uses>>
+TosKer .. Sommelier : <<same ecosystem>>
+TosKer .. TosKeriser : <<same ecosystem>>
 xOpera_SaaS ..> xOpera_Opera : <<uses>>
 Tacker ..> tosca_parser : <<uses>>
 Cloudnet_TOSCA_Toolbox ..up..> ETSI_GS_NFV_SOL_001 : <<applied to>>
@@ -328,6 +330,7 @@ Cloudnet_TOSCA_Toolbox ..up..> TORCH : <<applied to>>
 Cloudnet_TOSCA_Toolbox ..up..> xOpera_Opera : <<applied to>>
 TOSCA_toolbox ..> Cloudnet_TOSCA_Toolbox : <<uses>>
 Heat_Translator ..> tosca_parser : <<uses>>
+TosKeriser .. Sommelier : <<same ecosystem>>
 Sommelier ..> tosca_parser : <<uses>>
 TOSCA_toolbox .up[hidden]. Cloudnet_TOSCA_Toolbox
 Heat_Translator .up[hidden]. tosca_parser

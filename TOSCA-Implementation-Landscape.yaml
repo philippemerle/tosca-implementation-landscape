@@ -389,6 +389,9 @@ TOSCA Orchestrators:
     Language: Python
     Links:
       GitHub: https://github.com/di-unipi-socc/tosker
+    same ecosystem:
+      - Sommelier
+      - TosKeriser
 
   xOpera Opera:
     Status: ACTIVE
@@ -490,6 +493,8 @@ TOSCA Developer Tools:
     Language: Python
     Links:
       GitHub: https://github.com/di-unipi-socc/TosKeriser
+    same ecosystem:
+      - Sommelier
 
   categories:
     TOSCA Parsers:
