@@ -20,7 +20,7 @@ Open Standards:
       - 1.3
     Target: NFV
     Links:
-      Spec v3.5.1: https://www.etsi.org/deliver/etsi_gs/NFV-SOL/001_099/001/03.05.01_60/gs_NFV-SOL001v030501p.pdf
+      Spec: https://www.etsi.org/deliver/etsi_gs/NFV-SOL/001_099/001/03.05.01_60/gs_NFV-SOL001v030501p.pdf
       Forge: https://forge.etsi.org/rep/nfv/SOL001
 
   TM Forum IG1176:
@@ -29,7 +29,7 @@ Open Standards:
       - 1.3
     Target: Model-Driven Automation
     Links:
-      Spec v4.1.0: https://www.tmforum.org/resources/standard/ig1176-tosca-guide-for-model-driven-automation-v4-1-0
+      Spec: https://www.tmforum.org/resources/standard/ig1176-tosca-guide-for-model-driven-automation-v4-1-0
       GitHub: https://github.com/pmjordan/TOSCA_for_TMForum
 
 EU Funded Projects:
@@ -119,7 +119,7 @@ TOSCA Modeling Tools:
     Status: ACTIVE
     TOSCA:
       - 1.0
-      - alien_dsl
+      - Alien DSL
     Target: Any cloud
     Usage: Webapp
     Nature: Open source
@@ -135,7 +135,7 @@ TOSCA Modeling Tools:
     Status: ACTIVE
     TOSCA:
       - 1.0
-      - alien_dsl
+      - Alien DSL
     Target: Open Telekom Cloud
     Usage: SaaS
     Nature: Commercial product # from T-Systems
@@ -156,9 +156,7 @@ TOSCA Modeling Tools:
 
   DICER:
     Status: INACTIVE
-    TOSCA: |
-      cloudify_dsl_1_x
-      where x in [1, 2, 3]
+    TOSCA: Cloudify DSL # 1.1 & 1.2 &1.3
     Usage:
       - Eclipse
     Nature: Open source
@@ -268,9 +266,7 @@ TOSCA Orchestrators:
 
   Cloudify:
     Status: ACTIVE
-    TOSCA: |
-      Cloudify DSL
-      TOSCA-inspired dialect
+    TOSCA: Cloudify DSL # TOSCA-inspired dialect
     Target: Any cloud
     Usage: CLI
     Nature:
@@ -286,7 +282,7 @@ TOSCA Orchestrators:
   MSO4SC HPC:
     Status: SLEEPING
     TOSCA: Cloudify DSL
-    Usage: Plugin
+    Usage: Library
     Nature: Open source
     Language: Python
     Links:
@@ -355,7 +351,7 @@ TOSCA Orchestrators:
     Status: ACTIVE
     TOSCA:
       - 1.3
-      - unfurl_1_0_0
+      - Unfurl DSL
     Target: Any cloud
     Usage: CLI
     Nature: Open source
@@ -473,7 +469,7 @@ TOSCA Developer Tools:
   Heat-Translator:
     Status: ACTIVE
     TOSCA: 1.0
-    Target: OpenStack Heat
+    Target: OpenStack
     Usage: CLI
     Nature: Open source
     Language: Python
@@ -502,7 +498,7 @@ TOSCA Developer Tools:
       JTOSCA parser:
         Status: SLEEPING
         TOSCA: 1.0
-        Usage: lib
+        Usage: Library
         Nature: Open source
         Language: Java
         Links:
@@ -517,8 +513,8 @@ TOSCA Developer Tools:
           - 1.3
           - 2.0
           - null # separation
-          - cloudify_dsl_1_3
-          - Heat
+          - Cloudify DSL
+          - OpenStack Heat
         Usage:
           - CLI
           - Webapp
@@ -546,7 +542,9 @@ TOSCA Developer Tools:
         Status: ACTIVE
         TOSCA:
           - 1.0
-          - NFV
+          - NFV 1.0
+          - 1.1
+          - 1.2
         Usage: CLI
         Nature: Open source
         Language: Python
