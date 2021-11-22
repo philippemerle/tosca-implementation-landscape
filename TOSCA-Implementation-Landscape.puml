@@ -4,12 +4,12 @@ package "**Open Standards**" as Open_Standards {
   map "**ETSI GS NFV-SOL 001**" as ETSI_GS_NFV_SOL_001 #PaleGreen {
     TOSCA => 1.1 + 1.2 + 1.3
     Target => NFV
-    Links => [[https://www.etsi.org/deliver/etsi_gs/NFV-SOL/001_099/001/03.05.01_60/gs_NFV-SOL001v030501p.pdf Spec v3.5.1]] [[https://forge.etsi.org/rep/nfv/SOL001 Forge]]
+    Links => [[https://www.etsi.org/deliver/etsi_gs/NFV-SOL/001_099/001/03.05.01_60/gs_NFV-SOL001v030501p.pdf Spec]] [[https://forge.etsi.org/rep/nfv/SOL001 Forge]]
   }
   map "**TM Forum IG1176**" as TM_Forum_IG1176 #PaleGreen {
     TOSCA => 1.3
     Target => Model-Driven Automation
-    Links => [[https://www.tmforum.org/resources/standard/ig1176-tosca-guide-for-model-driven-automation-v4-1-0 Spec v4.1.0]] [[https://github.com/pmjordan/TOSCA_for_TMForum <img:icons/GitHub.png{scale=0.5}>]]
+    Links => [[https://www.tmforum.org/resources/standard/ig1176-tosca-guide-for-model-driven-automation-v4-1-0 Spec]] [[https://github.com/pmjordan/TOSCA_for_TMForum <img:icons/GitHub.png{scale=0.5}>]]
   }
 }
 package "**EU Funded Projects**" as EU_Funded_Projects {
@@ -48,7 +48,7 @@ package "**Open Source Communities**" as Open_Source_Communities {
 }
 package "**TOSCA Modeling Tools**" as TOSCA_Modeling_Tools {
   map "**Alien4Cloud**" as Alien4Cloud #PaleGreen {
-    TOSCA => 1.0 + alien_dsl
+    TOSCA => 1.0 + Alien DSL
     Target => Any cloud
     Usage => Webapp
     Nature => Open source
@@ -56,7 +56,7 @@ package "**TOSCA Modeling Tools**" as TOSCA_Modeling_Tools {
     Links => [[http://alien4cloud.github.io <img:icons/Website.png{scale=0.5}>]] [[https://github.com/alien4cloud <img:icons/GitHub.png{scale=0.5}>]]
   }
   map "**Cloud Topology Designer**" as Cloud_Topology_Designer #PaleGreen {
-    TOSCA => 1.0 + alien_dsl
+    TOSCA => 1.0 + Alien DSL
     Target => Open Telekom Cloud
     Usage => SaaS
     Nature => Commercial product
@@ -70,7 +70,7 @@ package "**TOSCA Modeling Tools**" as TOSCA_Modeling_Tools {
     Links => [[https://github.com/CELAR/c-Eclipse <img:icons/GitHub.png{scale=0.5}>]]
   }
   map "**DICER**" as DICER #DarkRed {
-    TOSCA => cloudify_dsl_1_x\nwhere x in [1, 2, 3]
+    TOSCA => Cloudify DSL
     Usage => <img:icons/Eclipse.png{scale=0.5}>
     Nature => Open source
     Language => Java
@@ -143,7 +143,7 @@ package "**TOSCA Orchestrators**" as TOSCA_Orchestrators {
     Links => [[https://ystia.github.io <img:icons/Website.png{scale=0.5}>]] [[https://github.com/ystia/yorc <img:icons/GitHub.png{scale=0.5}>]]
   }
   map "**Cloudify**" as Cloudify #PaleGreen {
-    TOSCA => Cloudify DSL\nTOSCA-inspired dialect
+    TOSCA => Cloudify DSL
     Target => Any cloud
     Usage => CLI
     Nature => Commercial product\nOpen source
@@ -152,7 +152,7 @@ package "**TOSCA Orchestrators**" as TOSCA_Orchestrators {
   }
   map "**MSO4SC HPC**" as MSO4SC_HPC #Orange {
     TOSCA => Cloudify DSL
-    Usage => Plugin
+    Usage => Library
     Nature => Open source
     Language => Python
     Links => [[https://github.com/MSO4SC/cloudify-hpc-plugin <img:icons/GitHub.png{scale=0.5}>]]
@@ -190,7 +190,7 @@ package "**TOSCA Orchestrators**" as TOSCA_Orchestrators {
     Links => [[https://turandot.puccini.cloud <img:icons/Website.png{scale=0.5}>]] [[https://github.com/tliron/turandot <img:icons/GitHub.png{scale=0.5}>]]
   }
   map "**Unfurl**" as Unfurl #PaleGreen {
-    TOSCA => 1.3 + unfurl_1_0_0
+    TOSCA => 1.3 + Unfurl DSL
     Target => Any cloud
     Usage => CLI
     Nature => Open source
@@ -253,7 +253,7 @@ package "**TOSCA Developer Tools**" as TOSCA_Developer_Tools {
   }
   map "**Heat-Translator**" as Heat_Translator #PaleGreen {
     TOSCA => 1.0
-    Target => OpenStack Heat
+    Target => OpenStack
     Usage => CLI
     Nature => Open source
     Language => Python
@@ -270,13 +270,13 @@ package "**TOSCA Developer Tools**" as TOSCA_Developer_Tools {
   package "**TOSCA Parsers**" as TOSCA_Parsers {
     map "**JTOSCA parser**" as JTOSCA_parser #Orange {
       TOSCA => 1.0
-      Usage => lib
+      Usage => Library
       Nature => Open source
       Language => Java
       Links => [[https://github.com/onap/sdc-jtosca <img:icons/GitHub.png{scale=0.5}>]]
     }
     map "**Puccini**" as Puccini #PaleGreen {
-      TOSCA => 1.0 + 1.1 + 1.2 + 1.3 + 2.0 +\ncloudify_dsl_1_3 + Heat
+      TOSCA => 1.0 + 1.1 + 1.2 + 1.3 + 2.0 +\nCloudify DSL + OpenStack Heat
       Usage => CLI + Webapp
       Nature => Open source
       Language => Go
@@ -290,7 +290,7 @@ package "**TOSCA Developer Tools**" as TOSCA_Developer_Tools {
       Links => [[https://github.com/di-unipi-socc/Sommelier <img:icons/GitHub.png{scale=0.5}>]]
     }
     map "**tosca-parser**" as tosca_parser #PaleGreen {
-      TOSCA => 1.0 + NFV
+      TOSCA => 1.0 + NFV 1.0 + 1.1 + 1.2
       Usage => CLI
       Nature => Open source
       Language => Python
