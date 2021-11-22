@@ -282,6 +282,13 @@ package "**TOSCA Developer Tools**" as TOSCA_Developer_Tools {
       Language => Java
       Links => [[https://github.com/onap/sdc-jtosca <img:icons/GitHub.png{scale=0.5}>]]
     }
+    map "**Sommelier**" as Sommelier #Orange {
+      TOSCA => 1.0
+      Usage => CLI
+      Nature => Academia prototype\nOpen source
+      Language => Python
+      Links => [[https://github.com/di-unipi-socc/Sommelier <img:icons/GitHub.png{scale=0.5}>]]
+    }
     map "**tosca-parser**" as tosca_parser #PaleGreen {
       TOSCA => 1.0 + NFV
       Usage => CLI
@@ -321,6 +328,7 @@ Cloudnet_TOSCA_Toolbox ..up..> TORCH : <<applied to>>
 Cloudnet_TOSCA_Toolbox ..up..> xOpera_Opera : <<applied to>>
 TOSCA_toolbox ..> Cloudnet_TOSCA_Toolbox : <<uses>>
 Heat_Translator ..> tosca_parser : <<uses>>
+Sommelier ..> tosca_parser : <<uses>>
 TOSCA_toolbox .up[hidden]. Cloudnet_TOSCA_Toolbox
 Heat_Translator .up[hidden]. tosca_parser
 Heat_Translator .up[hidden]. tosca_parser

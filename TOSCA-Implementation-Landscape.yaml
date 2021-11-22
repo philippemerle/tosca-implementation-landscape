@@ -493,6 +493,15 @@ TOSCA Developer Tools:
 
   categories:
     TOSCA Parsers:
+      JTOSCA parser:
+        Status: SLEEPING
+        TOSCA: 1.0
+        Usage: lib
+        Nature: Open source
+        Language: Java
+        Links:
+          GitHub: https://github.com/onap/sdc-jtosca
+
       Puccini:
         Status: ACTIVE
         TOSCA:
@@ -513,14 +522,19 @@ TOSCA Developer Tools:
           Website: https://puccini.cloud
           GitHub: https://github.com/tliron/puccini
 
-      JTOSCA parser:
+      Sommelier:
         Status: SLEEPING
-        TOSCA: 1.0
-        Usage: lib
-        Nature: Open source
-        Language: Java
+        TOSCA:
+          - 1.0
+        Usage: CLI
+        Nature:
+          - Academia prototype
+          - Open source
+        Language: Python
         Links:
-          GitHub: https://github.com/onap/sdc-jtosca
+          GitHub: https://github.com/di-unipi-socc/Sommelier
+        uses:
+          - tosca-parser
 
       tosca-parser:
         Status: ACTIVE
