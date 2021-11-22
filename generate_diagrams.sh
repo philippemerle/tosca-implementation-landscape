@@ -12,6 +12,9 @@
 #
 ######################################################################
 
+# Generate the Markdown-based statistics document
+./statistics.py TOSCA-Implementation-Landscape.yaml
+
 # Generate the PlantUML file from the dataset
 ./yaml2puml.py TOSCA-Implementation-Landscape.yaml
 
