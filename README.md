@@ -61,7 +61,9 @@ The next step was to select a set of criteria to characterize each TOSCA impleme
 * **Language**: Only for open source implementations, this indicates the programming language(s) used to develop the open source product.
 * **Links**: This takes the following values:
   * **![Website](icons/Website.png)**: This link points to the address of the official Web site of the TOSCA implementation.
+  * **![Forge](icons/Spec.png)**: This link points to the specification document associated to the TOSCA implementation.
   * **![GitHub](icons/GitHub.png)**: This link points to the GitHub repository hosting the open source code for the TOSCA implementation.
+  * **![Forge](icons/Forge.png)**: This link points to the forge repository hosting the open source code for the TOSCA implementation.
   * **![SaaS](icons/SaaS.png)**: This link points to the address where the Software-as-Service is deployed.
 
 All these TOSCA implementations are part of a global TOSCA ecosystem. To understand this ecosystem, this is important to capture the relationships between these TOSCA implementations. Following lists six types of pertinent relationships (represented by tagged arrows in the big picture):

@@ -4,12 +4,12 @@ package "**Open Standards**" as Open_Standards {
   map "**ETSI GS NFV-SOL 001**" as ETSI_GS_NFV_SOL_001 #PaleGreen {
     TOSCA => 1.1 + 1.2 + 1.3
     Target => NFV
-    Links => [[https://www.etsi.org/deliver/etsi_gs/NFV-SOL/001_099/001/03.05.01_60/gs_NFV-SOL001v030501p.pdf Spec]] [[https://forge.etsi.org/rep/nfv/SOL001 Forge]]
+    Links => [[https://www.etsi.org/deliver/etsi_gs/NFV-SOL/001_099/001/03.05.01_60/gs_NFV-SOL001v030501p.pdf <img:icons/Spec.png{scale=0.5}>]] [[https://forge.etsi.org/rep/nfv/SOL001 <img:icons/Forge.png{scale=0.5}>]]
   }
   map "**TM Forum IG1176**" as TM_Forum_IG1176 #PaleGreen {
     TOSCA => 1.3
     Target => Model-Driven Automation
-    Links => [[https://www.tmforum.org/resources/standard/ig1176-tosca-guide-for-model-driven-automation-v4-1-0 Spec]] [[https://github.com/pmjordan/TOSCA_for_TMForum <img:icons/GitHub.png{scale=0.5}>]]
+    Links => [[https://www.tmforum.org/resources/standard/ig1176-tosca-guide-for-model-driven-automation-v4-1-0 <img:icons/Spec.png{scale=0.5}>]] [[https://github.com/pmjordan/TOSCA_for_TMForum <img:icons/GitHub.png{scale=0.5}>]]
   }
 }
 package "**EU Funded Projects**" as EU_Funded_Projects {

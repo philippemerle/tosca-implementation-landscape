@@ -26,8 +26,10 @@ COLORS = {
 # Iconifiable labels
 ICONS = [
     "Eclipse",
+    "Forge",
     "GitHub",
     "SaaS",
+    "Spec",
     "Website",
 ]
 
