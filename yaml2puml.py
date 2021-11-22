@@ -48,7 +48,7 @@ RELATIONSHIPS = {
     "hosts": "*-up-",
     "uses": "..>",
     "plugins": "<..",
-    "same ecosystem": "..",
+    "same ecosystem": "--",
     "applied to": "..up..>",
 }
 
