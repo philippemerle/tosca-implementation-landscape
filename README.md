@@ -69,7 +69,7 @@ All these TOSCA implementations are part of a global TOSCA ecosystem. To underst
 * **`<<hosts>>`**: An open source community (or EU project) hosts a TOSCA implementation. For instance, **OpenStack** hosts **tosca-parser**, **Heat-Translator** and **Tacker** open source projects.
 * **`<<uses>>`**: A source implementation uses another target implementation. For instance, **Alien4Cloud** modeling tool uses both **Cloudify** and **Yorc** as TOSCA orchestrators.
 * **`<<plugins>>`**: A source implementation is a plugin of another target implementation. For instance, **MSO4SC HPC** is a plugin for **Cloudify** orchestrator.
-* **`<<same ecosystem>>`**: Two independent TOSCA implementations are developed jointly. For instance, both **Eclipse Winery** and **OpenTOSCA** are developed by the same academia research group.
+* **`<<same ecosystem>>`**: Two independent TOSCA implementations are developed jointly. For instance, both **Eclipse Winery** and **OpenTOSCA** are developed by the same academia research group and **Sommelier**, **TosKer** and **TosKeriser** were developed by another academia research group.
 * **`<<applied to>>`**: A source implementation is applied to another target implementation. For instance, my [**TOSCA toolbox**](https://github.com/Orange-OpenSource/Cloudnet-TOSCA-toolbox) was applied to all the examples provided by **TORCH** and **xOpera Opera** orchestrators, and the **ETSI GS NFV-SOL 001** standard.
 
 Following figure depicts a metamodel encompassing all these categories, criteria and relationships.
