@@ -80,6 +80,8 @@ Following figure depicts a metamodel encompassing all these categories, criteria
 
 Then, this metamodel is instantiated and filled: See the [TOSCA Implementation Landscape dataset](TOSCA-Implementation-Landscape.yaml).
 
+Then, some statistics about the [dataset](TOSCA-Implementation-Landscape.yaml) were automatically computed. Have a look to [TOSCA Implementation Landscape statistics](TOSCA-Implementation-Landscape-statistics.md).
+
 I hope this small classification, sets of both criteria and relationships could help you to select the TOSCA implementations that match both your business and technical requirements. Don't hesitate to propose/ask for other new helpful category/criteria/relationship.
 
 ### Generating the visual diagrams
