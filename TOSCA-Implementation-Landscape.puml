@@ -173,7 +173,7 @@ package "**TOSCA Orchestrators**" as TOSCA_Orchestrators {
     Language => Java
     Links => [[https://github.com/indigo-dc/orchestrator <img:icons/GitHub.png{scale=0.5}>]]
   }
-  map "**TORCH**" as TORCH #PaleGreen {
+  map "**TORCH**" as TORCH #Orange {
     TOSCA => 1.0
     Target => OpenStack + Azure +\nKubernetes + Docker Swarm
     Usage => Webapp

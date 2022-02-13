@@ -312,7 +312,7 @@ TOSCA Orchestrators:
       GitHub: https://github.com/indigo-dc/orchestrator
 
   TORCH:
-    Status: ACTIVE
+    Status: SLEEPING
     TOSCA: 1.0
     Target:
       - OpenStack
