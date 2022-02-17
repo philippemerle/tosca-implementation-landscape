@@ -443,6 +443,7 @@ TOSCA Developer Tools:
     Links:
       GitHub: https://github.com/Orange-OpenSource/Cloudnet-TOSCA-toolbox
     applied to:
+      - AriaTosca
       - ETSI GS NFV-SOL 001
       - TORCH
       - xOpera Opera
