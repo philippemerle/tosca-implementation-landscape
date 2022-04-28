@@ -189,6 +189,14 @@ package "**TOSCA Orchestrators**" as TOSCA_Orchestrators {
     Language => Go
     Links => [[https://turandot.puccini.cloud <img:icons/Website.png{scale=0.5}>]] [[https://github.com/tliron/turandot <img:icons/GitHub.png{scale=0.5}>]]
   }
+  map "**Khutulun**" as Khutulun #PaleGreen {
+    TOSCA => 2.0
+    Target => Bare processes + Podman +\nsystemd-nspawn +\nDistrobox + libvirt + Firewalld
+    Usage => CLI + Webapp
+    Nature => Open source
+    Language => Go
+    Links => [[https://khutulun.puccini.cloud <img:icons/Website.png{scale=0.5}>]] [[https://github.com/tliron/khutulun <img:icons/GitHub.png{scale=0.5}>]]
+  }
   map "**Unfurl**" as Unfurl #PaleGreen {
     TOSCA => 1.3 + Unfurl DSL
     Target => Any cloud
@@ -320,6 +328,7 @@ RADON_IDE ..> xOpera_Template_Library : <<uses>>
 Cloudify <.. MSO4SC_HPC : <<plugins>>
 TORCH ..> tosca_parser : <<uses>>
 Turandot ..> Puccini : <<uses>>
+Khutulun ..> Puccini : <<uses>>
 Unfurl ..> tosca_parser : <<uses>>
 TosKer -- Sommelier : <<same ecosystem>>
 TosKer -- TosKeriser : <<same ecosystem>>

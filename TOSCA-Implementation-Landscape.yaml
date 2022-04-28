@@ -347,6 +347,29 @@ TOSCA Orchestrators:
     uses:
       - Puccini
 
+  Khutulun:
+    Status: ACTIVE
+    TOSCA: 2.0
+    Target:
+      - Bare processes
+      - Podman
+      - null # separation
+      - systemd-nspawn
+      - null # separation
+      - Distrobox
+      - libvirt
+      - Firewalld
+    Usage:
+      - CLI
+      - Webapp
+    Nature: Open source
+    Language: Go
+    Links:
+      Website: https://khutulun.puccini.cloud
+      GitHub: https://github.com/tliron/khutulun
+    uses:
+      - Puccini
+
   Unfurl:
     Status: ACTIVE
     TOSCA:
