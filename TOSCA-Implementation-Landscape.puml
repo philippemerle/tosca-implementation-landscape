@@ -336,6 +336,7 @@ xOpera_SaaS ..> xOpera_Opera : <<uses>>
 Tacker ..> tosca_parser : <<uses>>
 Cloudnet_TOSCA_Toolbox ..up..> AriaTosca : <<applied to>>
 Cloudnet_TOSCA_Toolbox ..up..> ETSI_GS_NFV_SOL_001 : <<applied to>>
+Cloudnet_TOSCA_Toolbox ..up..> Khutulun : <<applied to>>
 Cloudnet_TOSCA_Toolbox ..up..> TORCH : <<applied to>>
 Cloudnet_TOSCA_Toolbox ..up..> xOpera_Opera : <<applied to>>
 TOSCA_toolbox ..> Cloudnet_TOSCA_Toolbox : <<uses>>
