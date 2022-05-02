@@ -313,6 +313,20 @@ package "**TOSCA Developer Tools**" as TOSCA_Developer_Tools {
       Links => [[https://wiki.openstack.org/wiki/TOSCA-Parser <img:icons/Website.png{scale=0.5}>]] [[https://github.com/openstack/tosca-parser <img:icons/GitHub.png{scale=0.5}>]]
     }
   }
+  map "**oas2tosca**" as oas2tosca #PaleGreen {
+    TOSCA => 1.3
+    Usage => CLI
+    Nature => Open source
+    Language => Python
+    Links => [[https://github.com/lauwers/oas2tosca <img:icons/GitHub.png{scale=0.5}>]]
+  }
+  map "**yang2tosca**" as yang2tosca #PaleGreen {
+    TOSCA => 1.3
+    Usage => CLI
+    Nature => Open source
+    Language => Python
+    Links => [[https://github.com/lauwers/yang2tosca <img:icons/GitHub.png{scale=0.5}>]]
+  }
 }
 CELAR o-- c_Eclipse : <<contributes>>
 DICE o-- DICER : <<contributes>>
@@ -352,6 +366,8 @@ TOSCA_toolbox ..> Cloudnet_TOSCA_Toolbox : <<uses>>
 Heat_Translator ..> tosca_parser : <<uses>>
 TosKeriser -- Sommelier : <<same ecosystem>>
 Sommelier ..> tosca_parser : <<uses>>
+oas2tosca -- yang2tosca : <<same ecosystem>>
+yang2tosca -- oas2tosca : <<same ecosystem>>
 TOSCA_toolbox .up[hidden]. Cloudnet_TOSCA_Toolbox
 Heat_Translator .up[hidden]. tosca_parser
 Heat_Translator .up[hidden]. tosca_parser

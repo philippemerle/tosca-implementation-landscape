@@ -597,3 +597,25 @@ TOSCA Developer Tools:
         Links:
           Website: https://wiki.openstack.org/wiki/TOSCA-Parser
           GitHub: https://github.com/openstack/tosca-parser
+
+  oas2tosca:
+    Status: ACTIVE
+    TOSCA: 1.3
+    Usage: CLI
+    Nature: Open source
+    Language: Python
+    Links:
+      GitHub: https://github.com/lauwers/oas2tosca
+    same ecosystem:
+      - yang2tosca
+
+  yang2tosca:
+    Status: ACTIVE
+    TOSCA: 1.3
+    Usage: CLI
+    Nature: Open source
+    Language: Python
+    Links:
+      GitHub: https://github.com/lauwers/yang2tosca
+    same ecosystem:
+      - oas2tosca
