@@ -244,6 +244,14 @@ package "**TOSCA Orchestrators**" as TOSCA_Orchestrators {
     Language => Python
     Links => [[https://wiki.openstack.org/wiki/Tacker <img:icons/Website.png{scale=0.5}>]] [[https://github.com/openstack/tacker <img:icons/GitHub.png{scale=0.5}>]]
   }
+  map "**MiCADOscale**" as MiCADOscale #PaleGreen {
+    TOSCA => 1.0 + 1.2 + 1.3
+    Target => Any cloud + Kubernetes
+    Usage => CLI
+    Nature => Academia prototype\nOpen source
+    Language => Python
+    Links => [[https://micado-scale.eu/ <img:icons/Website.png{scale=0.5}>]] [[https://micado-scale.readthedocs.io Doc]] [[https://github.com/micado-scale <img:icons/GitHub.png{scale=0.5}>]]
+  }
 }
 package "**TOSCA Developer Tools**" as TOSCA_Developer_Tools {
   map "**Cloudnet TOSCA Toolbox**" as Cloudnet_TOSCA_Toolbox #PaleGreen {
@@ -334,6 +342,7 @@ TosKer -- Sommelier : <<same ecosystem>>
 TosKer -- TosKeriser : <<same ecosystem>>
 xOpera_SaaS ..> xOpera_Opera : <<uses>>
 Tacker ..> tosca_parser : <<uses>>
+MiCADOscale ..> tosca_parser : <<uses>>
 Cloudnet_TOSCA_Toolbox ..up..> AriaTosca : <<applied to>>
 Cloudnet_TOSCA_Toolbox ..up..> ETSI_GS_NFV_SOL_001 : <<applied to>>
 Cloudnet_TOSCA_Toolbox ..up..> Khutulun : <<applied to>>

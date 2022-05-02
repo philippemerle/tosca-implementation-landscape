@@ -45,7 +45,7 @@ The next step was to select a set of criteria to characterize each TOSCA impleme
 
 * **TOSCA**: These are the TOSCA profile(s), i.e., `tosca_definitions_version` keyname, supported by the TOSCA implementation. For some implementations, this information was not found, so it is unknown. This is the case for **c-Eclipse**, **Cisco NSO**, **CPLANE.ai**, **EntrepriseWeb**, and **Itential** products. Some products added their proprietary profiles such as **Alien4Cloud** and **Unfurl**. Let's note that **Cloudify** only supports its own profiles.
 
-* **Target**: This is the target environment(s) where deployments can be done with the TOSCA implementation. A TOSCA orchestrator could potentially target any cloud such as **Cloudify**, **OpenTOSCA**, **Opera**, **Ubicity Orchestrator** and **Yorc**. Some TOSCA orchestrator targets a specific runtime environment: **Tacker** targets OpenStack only, **Turandot** targets Kubernetes only and **TosKer** targets Docker only.
+* **Target**: This is the target environment(s) where deployments can be done with the TOSCA implementation. A TOSCA orchestrator could potentially target any cloud such as **Cloudify**, **MiCADOscale**, **OpenTOSCA**, **Opera**, **Ubicity Orchestrator** and **Yorc**. Some TOSCA orchestrator targets a specific runtime environment: **Tacker** targets OpenStack only, **Turandot** targets Kubernetes only and **TosKer** targets Docker only.
 
 * **Usage**: This determinates how the end-user interacts with the TOSCA implementation, via a
   * **CLI**: Command-Line Interface (CLI).
@@ -55,13 +55,13 @@ The next step was to select a set of criteria to characterize each TOSCA impleme
 * **Nature**: A TOSCA implementation could be
   * **Commercial product**: The implementation or services around the implementation are sold by a commercial company (or several). Exemplary implementations are **Cloud Topology Designer**, **Cloudify** and **Ubicity Orchestrator**.
   * **Academia product**: The implementation is developed since several years by an academia research group. Exemplary implementations are **Cloudnet TOSCA Toolbox**, **Eclipse Winery** and **OpenTOSCA**.
-  * **Academia prototype**: The implementation was prototyped as proof of concept of one (or a series of) academia scientific papers. Exemplary implementations are **Sommelier**, **TORCH**, **TosKer**, and **TosKeriser**.
+  * **Academia prototype**: The implementation was prototyped as proof of concept of one (or a series of) academia scientific papers. Exemplary implementations are **MiCADOscale**, **Sommelier**, **TORCH**, **TosKer**, and **TosKeriser**.
   * **Open source**: The source code of the implementation is available in a public accessible code repository, such as GitHub for instance. A lot of implementations are open source, so I prefer to name none.
 
 * **Language**: Only for open source implementations, this indicates the programming language(s) used to develop the open source product.
 * **Links**: This takes the following values:
   * **![Website](icons/Website.png)**: This link points to the address of the official Web site of the TOSCA implementation.
-  * **![Forge](icons/Spec.png)**: This link points to the specification document associated to the TOSCA implementation.
+  * **![Spec](icons/Spec.png)**: This link points to the specification document associated to the TOSCA implementation.
   * **![GitHub](icons/GitHub.png)**: This link points to the GitHub repository hosting the open source code for the TOSCA implementation.
   * **![Forge](icons/Forge.png)**: This link points to the forge repository hosting the open source code for the TOSCA implementation.
   * **![SaaS](icons/SaaS.png)**: This link points to the address where the Software-as-Service is deployed.

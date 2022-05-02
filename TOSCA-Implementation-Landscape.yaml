@@ -449,6 +449,27 @@ TOSCA Orchestrators:
     uses:
       - tosca-parser
 
+  MiCADOscale:
+    Status: ACTIVE
+    TOSCA:
+      - 1.0
+      - 1.2
+      - 1.3
+    Target:
+      - Any cloud
+      - Kubernetes
+    Usage: CLI
+    Nature:
+      - Academia prototype
+      - Open source
+    Language: Python
+    Links:
+      Website: https://micado-scale.eu/
+      Doc: https://micado-scale.readthedocs.io
+      GitHub: https://github.com/micado-scale
+    uses:
+      - tosca-parser # more precisely a fork of Unfurl parser
+
 TOSCA Developer Tools:
   Cloudnet TOSCA Toolbox:
     Status: ACTIVE
