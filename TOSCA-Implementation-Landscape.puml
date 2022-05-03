@@ -213,7 +213,7 @@ package "**TOSCA Orchestrators**" as TOSCA_Orchestrators {
     Language => Java
     Links => [[https://www.opentosca.org <img:icons/Website.png{scale=0.5}>]] [[https://github.com/OpenTOSCA <img:icons/GitHub.png{scale=0.5}>]]
   }
-  map "**TosKer**" as TosKer #Orange {
+  map "**TosKer**" as TosKer #DarkRed {
     TOSCA => 1.0
     Target => Docker
     Usage => CLI
