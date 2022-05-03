@@ -491,10 +491,10 @@ TOSCA Developer Tools:
       - ETSI GS NFV-SOL 001
       - Khutulun
       - TORCH
+      - TosKer # see https://github.com/Orange-OpenSource/Cloudnet-TOSCA-toolbox/tree/master/examples/TosKer
       - xOpera Opera
 # TODO
 #      - Turandot
-#      - TosKer
 #      - ...
 
   TOSCA toolbox:
