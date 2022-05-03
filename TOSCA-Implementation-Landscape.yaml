@@ -399,7 +399,7 @@ TOSCA Orchestrators:
       GitHub: https://github.com/OpenTOSCA
 
   TosKer:
-    Status: SLEEPING
+    Status: INACTIVE
     TOSCA: 1.0
     Target: Docker
     Usage: CLI
