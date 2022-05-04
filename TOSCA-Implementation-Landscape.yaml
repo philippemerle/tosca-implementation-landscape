@@ -1,7 +1,7 @@
 ######################################################################
 #
 # TOSCA Implementation Landscape
-# Copyright (c) 2021 Inria
+# Copyright (c) 2021-22 Inria
 #
 # This software is distributed under the Apache License 2.0
 # the text of which is available at http://www.apache.org/licenses/LICENSE-2.0
@@ -487,15 +487,13 @@ TOSCA Developer Tools:
     Links:
       GitHub: https://github.com/Orange-OpenSource/Cloudnet-TOSCA-toolbox
     applied to:
-      - AriaTosca
+      - AriaTosca # see https://github.com/Orange-OpenSource/Cloudnet-TOSCA-toolbox/tree/master/examples/ariatosca
       - ETSI GS NFV-SOL 001
-      - Khutulun
-      - TORCH
+      - Khutulun # see https://github.com/Orange-OpenSource/Cloudnet-TOSCA-toolbox/tree/master/examples/Khutulun
+      - TORCH # see https://github.com/philippemerle/TORCH/tree/master/examples/Cloudnet_TOSCA_Toolbox_Results
       - TosKer # see https://github.com/Orange-OpenSource/Cloudnet-TOSCA-toolbox/tree/master/examples/TosKer
-      - xOpera Opera
-# TODO
-#      - Turandot
-#      - ...
+      - Turandot # see https://github.com/Orange-OpenSource/Cloudnet-TOSCA-toolbox/tree/master/examples/Turandot
+      - xOpera Opera # see https://github.com/philippemerle/xopera-examples/tree/master/diagrams
 
   TOSCA toolbox:
     Status: ACTIVE
