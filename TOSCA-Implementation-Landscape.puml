@@ -328,6 +328,16 @@ package "**TOSCA Developer Tools**" as TOSCA_Developer_Tools {
     Links => [[https://github.com/lauwers/yang2tosca <img:icons/GitHub.png{scale=0.5}>]]
   }
 }
+package "**TOSCA Applications**" as TOSCA_Applications {
+  map "**kubetos**" as kubetos #PaleGreen {
+    TOSCA => 1.3
+    Target => Kubernetes
+    Usage => CLI
+    Nature => Open source
+    Language => TOSCA + Ansible
+    Links => [[https://github.com/Shishqa/kubetos <img:icons/GitHub.png{scale=0.5}>]]
+  }
+}
 CELAR o-- c_Eclipse : <<contributes>>
 DICE o-- DICER : <<contributes>>
 INDIGO___DataCloud *-up- INDIGO_PaaS_Orchestrator : <<hosts>>
@@ -360,6 +370,7 @@ MiCADOscale ..> tosca_parser : <<uses>>
 Cloudnet_TOSCA_Toolbox ..up..> AriaTosca : <<applied to>>
 Cloudnet_TOSCA_Toolbox ..up..> ETSI_GS_NFV_SOL_001 : <<applied to>>
 Cloudnet_TOSCA_Toolbox ..up..> Khutulun : <<applied to>>
+Cloudnet_TOSCA_Toolbox ..up..> kubetos : <<applied to>>
 Cloudnet_TOSCA_Toolbox ..up..> TORCH : <<applied to>>
 Cloudnet_TOSCA_Toolbox ..up..> TosKer : <<applied to>>
 Cloudnet_TOSCA_Toolbox ..up..> Turandot : <<applied to>>
@@ -370,11 +381,13 @@ TosKeriser -- Sommelier : <<same ecosystem>>
 Sommelier ..> tosca_parser : <<uses>>
 oas2tosca -- yang2tosca : <<same ecosystem>>
 yang2tosca -- oas2tosca : <<same ecosystem>>
+kubetos ..> xOpera_Opera : <<uses>>
 TOSCA_toolbox .up[hidden]. Cloudnet_TOSCA_Toolbox
 Heat_Translator .up[hidden]. tosca_parser
 Heat_Translator .up[hidden]. tosca_parser
 Open_Standards --[hidden]-- EU_Funded_Projects
-EU_Funded_Projects --[hidden]-- TOSCA_Modeling_Tools
+EU_Funded_Projects --[hidden]-- TOSCA_Applications
+TOSCA_Applications --[hidden]-- TOSCA_Modeling_Tools
 TOSCA_Modeling_Tools --[hidden]-- TOSCA_Marketplaces
 TOSCA_Marketplaces --[hidden]-- TOSCA_Orchestrators
 TOSCA_Orchestrators --[hidden]-- TOSCA_Developer_Tools

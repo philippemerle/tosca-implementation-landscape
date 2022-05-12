@@ -56,6 +56,9 @@ class **Orchestrator** extends SoftwareImplementation {
 class **DeveloperTool** extends SoftwareImplementation {
 }
 
+class **Application** extends SoftwareImplementation {
+}
+
 Landscape *-- "*" Category : categories
 Category *- "*" Implementation : implementations
 Category *-up- "*" Category : categories
@@ -68,6 +71,6 @@ Implementation --> "*" Implementation : same ecosystem
 SoftwareImplementation -up-> "*" SoftwareImplementation : plugins
 SoftwareImplementation --> "*" SoftwareImplementation : applied to
 
-"**DeveloperTool**" -[hidden] "**OpenStandard**"
+"**Application**" -[hidden] "**OpenStandard**"
 
 @end

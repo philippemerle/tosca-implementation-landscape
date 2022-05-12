@@ -22,7 +22,7 @@ The most crucial methodological points in any study are objectivity and exhausti
 
 I started from the list of [Known TOSCA Implementations](https://github.com/oasis-open/tosca-community-contributions/wiki/Known-TOSCA-Implementations) maintained by the OASIS TOSCA TC and reported in these [slides](https://www.oasis-open.org/committees/download.php/67709/TOSCA%20Webinar-2020-09-09.pdf). The entries in this list are sorted in the alphabetical order and are intrinsically heterogeneous.
 
-In order to structure the TOSCA landscape, I gradually built a classification containing the following seven categories:
+In order to structure the TOSCA landscape, I gradually built a classification containing the following eight categories:
 1. **Open Standards**: This groups open standards based on TOSCA. Exemplary standards are **ETSI GS NFV-SOL 001** and **TM Forum IG1176**.
 2. **EU Funded Projects**: This groups European Union funded projects which have contributed to some TOSCA software tools. Exemplary projects are **CELAR**, **Indigo**, **RADON**, **SeaClouds**, and **SODALITE**. I discovered the missing **DICE** later during the study.
 3. **TOSCA Modeling Tools**: This groups all TOSCA implementations providing a graphical interface (GUI) to design both TOSCA topology templates and types. Exemplary implementations are **Alien4Cloud**, **Cloud Topology Designer**, **DICER**, **Eclipse Winery**, and **EnterpriseWeb**. I discovered the missing **c-Eclipse** and **RADON IDE** later during the study.
@@ -30,6 +30,7 @@ In order to structure the TOSCA landscape, I gradually built a classification co
 5. **TOSCA Orchestrators**: As the category name clearly indicates, this groups all TOSCA orchestrators which automate the deployment of TOSCA topology templates on target environments.  This category contains a lot of the entries of the initial list, and there are so many exemplary orchestrators that I prefer to name none. But you should find your favorite orchestrator, shouldn't you?
 6. **TOSCA Developer Tools**: This groups all other pieces of software to help the job of TOSCA developers, i.e. TOSCA parsers and TOSCA processors which are independent of any TOSCA orchestrator or modeling tool. Exemplary developer tools are the well-known OpenStack **tosca-parser** and my amazing [**TOSCA toolbox**](https://github.com/Orange-OpenSource/Cloudnet-TOSCA-toolbox) (I am not really objective on the latter:wink:).
 7. **Open Source Communities**: This groups large open source projects which host (or should host) TOSCA software tools and orchestrators. The exemplary community is **OpenStack**.
+8. **TOSCA Applications**: This groups TOSCA-based applications. An exemplary application is **kubetos**, a TOSCA framework to deploy Kubernetes.
 
 TOSCA users should be mainly interested by the **TOSCA Modeling Tools**, **TOSCA Marketplaces**, **TOSCA Orchestrators**, and **TOSCA Developer Tools**. Following figure is depicted how these pieces of software interact:
 
@@ -72,7 +73,7 @@ All these TOSCA implementations are part of a global TOSCA ecosystem. To underst
 * **`<<uses>>`**: A source implementation uses another target implementation. For instance, **Alien4Cloud** modeling tool uses both **Cloudify** and **Yorc** as TOSCA orchestrators.
 * **`<<plugins>>`**: A source implementation is a plugin of another target implementation. For instance, **MSO4SC HPC** is a plugin for **Cloudify** orchestrator.
 * **`<<same ecosystem>>`**: Two independent TOSCA implementations are developed jointly. For instance, both **Eclipse Winery** and **OpenTOSCA** are developed by the same academia research group and **Sommelier**, **TosKer** and **TosKeriser** were developed by another academia research group.
-* **`<<applied to>>`**: A source implementation is applied to another target implementation. For instance, my [**TOSCA toolbox**](https://github.com/Orange-OpenSource/Cloudnet-TOSCA-toolbox) was applied to all the examples provided by **AriaTosca**, **Khutulun**, **TORCH** and **xOpera Opera** orchestrators, and the **ETSI GS NFV-SOL 001** standard.
+* **`<<applied to>>`**: A source implementation is applied to another target implementation. For instance, my [**TOSCA toolbox**](https://github.com/Orange-OpenSource/Cloudnet-TOSCA-toolbox) was applied to all the examples provided by **kubetos** application, **AriaTosca**, **Khutulun**, **TORCH**, **TosKer**, **Turandot** and **xOpera Opera** orchestrators, and the **ETSI GS NFV-SOL 001** standard.
 
 Following figure depicts a metamodel encompassing all these categories, criteria and relationships.
 

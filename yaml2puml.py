@@ -2,7 +2,7 @@
 ######################################################################
 #
 # TOSCA Implementation Landscape
-# Copyright (c) 2021 Inria
+# Copyright (c) 2021-22 Inria
 #
 # This software is distributed under the Apache License 2.0
 # the text of which is available at http://www.apache.org/licenses/LICENSE-2.0
@@ -65,6 +65,7 @@ ARROWS_TO_FORCE_THE_LAYOUT = [
 LAYOUT_OF_CATEGORIES = [
     "Open Standards",
     "EU Funded Projects",
+    "TOSCA Applications",
     "TOSCA Modeling Tools",
     "TOSCA Marketplaces",
     "TOSCA Orchestrators",
