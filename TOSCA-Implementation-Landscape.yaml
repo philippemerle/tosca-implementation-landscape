@@ -224,6 +224,27 @@ TOSCA Orchestrators:
     Links:
       Website: https://www.cisco.com/c/en/us/products/cloud-systems-management/network-services-orchestrator/index.html
 
+  Clouni:
+    Status: ACTIVE
+    TOSCA:
+      - 1.0
+    Target:
+      - OpenStack
+      - Any cloud*
+    Usage:
+      - CLI
+      - gRPC
+      - REST API
+    Nature: Open source
+    Language:
+      - Python
+      - Ansible
+    Links:
+      Website: https://bura2017.github.io/clouni.github.io/en/dirhtml/index.html
+      GitHub: https://github.com/ispras/clouni
+    uses:
+      - tosca-parser
+
   CPLANE.ai:
     Status: UNKNOWN
     TOSCA: Unknown
