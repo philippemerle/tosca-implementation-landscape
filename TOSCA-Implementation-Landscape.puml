@@ -113,6 +113,14 @@ package "**TOSCA Orchestrators**" as TOSCA_Orchestrators {
     Nature => Commercial product
     Links => [[https://www.cisco.com/c/en/us/products/cloud-systems-management/network-services-orchestrator/index.html <img:icons/Website.png{scale=0.5}>]]
   }
+  map "**Clouni**" as Clouni #PaleGreen {
+    TOSCA => 1.0
+    Target => OpenStack + Any cloud*
+    Usage => CLI + gRPC + REST API
+    Nature => Open source
+    Language => Python + Ansible
+    Links => [[https://bura2017.github.io/clouni.github.io/en/dirhtml/index.html <img:icons/Website.png{scale=0.5}>]] [[https://github.com/ispras/clouni <img:icons/GitHub.png{scale=0.5}>]]
+  }
   map "**CPLANE.ai**" as CPLANE_ai #White {
     TOSCA => Unknown
     Target => Unknown
@@ -357,6 +365,7 @@ Eclipse_Winery -- OpenTOSCA : <<same ecosystem>>
 RADON_IDE ..> Eclipse_Winery : <<uses>>
 RADON_IDE ..> xOpera_SaaS : <<uses>>
 RADON_IDE ..> xOpera_Template_Library : <<uses>>
+Clouni ..> tosca_parser : <<uses>>
 Cloudify <.. MSO4SC_HPC : <<plugins>>
 TORCH ..> tosca_parser : <<uses>>
 Turandot ..> Puccini : <<uses>>
