@@ -230,7 +230,7 @@ TOSCA Orchestrators:
       - 1.0
     Target:
       - OpenStack
-      - Any cloud*
+      - Any cloud
     Usage:
       - CLI
       - gRPC

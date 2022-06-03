@@ -115,7 +115,7 @@ package "**TOSCA Orchestrators**" as TOSCA_Orchestrators {
   }
   map "**Clouni**" as Clouni #PaleGreen {
     TOSCA => 1.0
-    Target => OpenStack + Any cloud*
+    Target => OpenStack + Any cloud
     Usage => CLI + gRPC + REST API
     Nature => Open source
     Language => Python + Ansible
