@@ -38,9 +38,9 @@ TOSCA users should be mainly interested by the **TOSCA Modeling Tools**, **TOSCA
 
 The next step was to select a set of criteria to characterize each TOSCA implementation. This set should be smallest to ease the reading of this study but enough large to provide pertinent information to TOSCA users (you). The currently selected seven criteria are the following:
 
-* **Activity**: This is the level of activities of a TOSCA implementation.  The two only levels are:
-  * **Active**: An implementation is tagged as active and are represented by a green map when observable activities (e.g. commits) were done during the last year. More than two-thirds of implementations are active.
-  * **Sleeping**: An implementation is tagged as sleeping and are represented by an orange map when no activities (e.g. commits) were observed during the last year. They are just sleeping before coming back active or becoming inactive. Sleeping implementations are **JTOSCA**, **MSO4SC HPC**, **Sommelier**, **TORCH**, **TosKer**, and **TosKeriser**.
+* **Activity**: This is the level of activities of a TOSCA implementation.  The four levels are:
+  * **Active**: An implementation is tagged as active and is represented by a green map when observable activities (e.g. commits) were done during the last year. More than two-thirds of implementations are active.
+  * **Sleeping**: An implementation is tagged as sleeping and is represented by an orange map when no activities (e.g. commits) were observed during the last year. They are just sleeping before coming back active or becoming inactive. Sleeping implementations are **JTOSCA**, **MSO4SC HPC**, **Sommelier**, **TORCH**, **TosKer**, and **TosKeriser**.
   * **Inactive**: An implementation is tagged as inactive and is represented by a red map when it was retired, completed, or had no commits since several years. **CELAR**, **DICE** and **SeaClouds** EU projects are completed since several years ago. **AriaTosca** orchestrator was retired on 2018. There are no commits on **c-Eclipse** and **DICER** since 2015 and 2018, respectively.
   * **Unknown**: For some TOSCA implementation, there is not enough publicly available information to determinate their level of activities. They are represented by white maps. Exemplary implementations are **EnterpriseWeb**, **Cisco NSO**, **CPLANE.ai**, and **Itential**.
 
