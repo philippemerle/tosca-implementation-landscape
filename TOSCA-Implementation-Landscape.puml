@@ -383,6 +383,7 @@ Cloudnet_TOSCA_Toolbox ..up..> kubetos : <<applied to>>
 Cloudnet_TOSCA_Toolbox ..up..> TORCH : <<applied to>>
 Cloudnet_TOSCA_Toolbox ..up..> TosKer : <<applied to>>
 Cloudnet_TOSCA_Toolbox ..up..> Turandot : <<applied to>>
+Cloudnet_TOSCA_Toolbox ..up..> Ubicity_Orchestrator : <<applied to>>
 Cloudnet_TOSCA_Toolbox ..up..> xOpera_Opera : <<applied to>>
 TOSCA_toolbox ..> Cloudnet_TOSCA_Toolbox : <<uses>>
 Heat_Translator ..> tosca_parser : <<uses>>

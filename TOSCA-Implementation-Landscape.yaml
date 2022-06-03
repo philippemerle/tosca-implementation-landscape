@@ -515,6 +515,7 @@ TOSCA Developer Tools:
       - TORCH # see https://github.com/philippemerle/TORCH/tree/master/examples/Cloudnet_TOSCA_Toolbox_Results
       - TosKer # see https://github.com/Orange-OpenSource/Cloudnet-TOSCA-toolbox/tree/master/examples/TosKer
       - Turandot # see https://github.com/Orange-OpenSource/Cloudnet-TOSCA-toolbox/tree/master/examples/Turandot
+      - Ubicity Orchestrator
       - xOpera Opera # see https://github.com/philippemerle/xopera-examples/tree/master/diagrams
 
   TOSCA toolbox:
