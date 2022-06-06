@@ -84,20 +84,23 @@ EU Funded Projects:
     uses:
       - xOpera Opera
 
-  Sodalite:
-    Status: ACTIVE
-    Links:
-      Website: https://www.sodalite.eu
-      GitHub: https://github.com/SODALITE-EU
-    uses:
-      - xOpera Opera
-
   LEXIS:
     # Description: Large Scale Execution for Industry & Society
     Status: ACTIVE
     Links:
       Website: http://www.lexis-project.eu
       GitHub: https://github.com/lexis-project
+    contributes:
+      - Alien4Cloud
+      - Yorc
+
+  eFlows4HPC:
+    # Description: Enabling dynamic and Intelligent workflows in the future EuroHPC ecosystem
+    Status: ACTIVE
+    Links:
+      Website: https://eflows4hpc.eu
+      Doc: https://eflows4hpc.readthedocs.io
+      GitHub: https://github.com/eflows4hpc
     contributes:
       - Alien4Cloud
       - Yorc
