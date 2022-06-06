@@ -31,6 +31,9 @@ package "**EU Funded Projects**" as EU_Funded_Projects {
   map "**Sodalite**" as Sodalite #PaleGreen {
     Links => [[https://www.sodalite.eu <img:icons/Website.png{scale=0.5}>]] [[https://github.com/SODALITE-EU <img:icons/GitHub.png{scale=0.5}>]]
   }
+  map "**LEXIS**" as LEXIS #PaleGreen {
+    Links => [[http://www.lexis-project.eu <img:icons/Website.png{scale=0.5}>]] [[https://github.com/lexis-project <img:icons/GitHub.png{scale=0.5}>]]
+  }
 }
 package "**Open Source Communities**" as Open_Source_Communities {
   map "**OpenStack**" as OpenStack #PaleGreen {
@@ -353,6 +356,8 @@ SeaClouds ..> Alien4Cloud : <<uses>>
 Radon o-- RADON_IDE : <<contributes>>
 Radon o-- OpenTOSCA : <<contributes>>
 Sodalite ..> xOpera_Opera : <<uses>>
+LEXIS o-- Alien4Cloud : <<contributes>>
+LEXIS o-- Yorc : <<contributes>>
 OpenStack *-up- tosca_parser : <<hosts>>
 OpenStack *-up- Heat_Translator : <<hosts>>
 OpenStack *-up- Tacker : <<hosts>>
